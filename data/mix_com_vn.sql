@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
+-- version 4.4.12
 -- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1
--- Généré le :  Mer 04 Janvier 2017 à 10:35
--- Version du serveur :  10.1.9-MariaDB
--- Version de PHP :  5.6.15
+-- Host: 127.0.0.1
+-- Generation Time: Jan 16, 2017 at 02:17 PM
+-- Server version: 5.6.25
+-- PHP Version: 5.6.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,16 +17,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `azbooking`
+-- Database: `mix.com.vn`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `admin`
+-- Table structure for table `admin`
 --
 
-CREATE TABLE `admin` (
+CREATE TABLE IF NOT EXISTS `admin` (
   `Id` int(11) NOT NULL,
   `khachsan_id` int(11) NOT NULL,
   `TenDangNhap` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -34,10 +34,10 @@ CREATE TABLE `admin` (
   `MatKhau` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `Quyen` int(11) NOT NULL,
   `status` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`Id`, `khachsan_id`, `TenDangNhap`, `Full_name`, `MatKhau`, `Quyen`, `status`) VALUES
@@ -47,10 +47,10 @@ INSERT INTO `admin` (`Id`, `khachsan_id`, `TenDangNhap`, `Full_name`, `MatKhau`,
 -- --------------------------------------------------------
 
 --
--- Structure de la table `booking_hotel`
+-- Table structure for table `booking_hotel`
 --
 
-CREATE TABLE `booking_hotel` (
+CREATE TABLE IF NOT EXISTS `booking_hotel` (
   `id` int(11) NOT NULL,
   `hotel_id` int(11) NOT NULL,
   `name_hotel` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -67,25 +67,25 @@ CREATE TABLE `booking_hotel` (
   `request` text COLLATE utf8_unicode_ci,
   `status` int(11) NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `booking_hotel`
+-- Dumping data for table `booking_hotel`
 --
 
 INSERT INTO `booking_hotel` (`id`, `hotel_id`, `name_hotel`, `name_customer`, `phone`, `email`, `address`, `from_date`, `to_date`, `num_member`, `price`, `price_room`, `total_price`, `request`, `status`, `created`) VALUES
 (35, 1, 'Somerset Central TD Hai Phong', 'Trần Văn Tùng', '12345678', 'tungtv.soict@gmail.com', 'Hà Nội', '2017-01-07', '0000-00-00', 3, '1880000', '6-1/5-1', '2700000', 'sdfsadfsadf', 0, '2017-01-04 01:58:05'),
 (36, 1, 'Somerset Central TD Hai Phong', 'Trần Văn Tùng', '123456789', 'tungtv.soict@gmail.com', 'Hà Nội', '2017-01-04', '2017-01-07', 1, '1880000', '6-1/5-1', '2700000', 'dsfasfsad', 0, '2017-01-04 02:09:29'),
 (37, 1, 'Somerset Central TD Hai Phong', 'Trần Văn Tùng', '123456789', 'tungtv.soict@gmail.com', 'Hà Nội', '2017-01-04', '2017-01-07', 1, '1880000', '6-1/5-1', '2700000', 'dsfasfsad', 0, '2017-01-04 02:13:36'),
-(38, 1, 'Somerset Central TD Hai Phong', 'Trần Văn Tùng', '0123456', 'tungtv.soict@gmail.com', 'Hà Nội', '2017-01-04', '2017-01-05', 1, '1880000', '6-1', '500000', '123123', 0, '2017-01-04 02:16:44');
+(38, 1, 'Somerset Central TD Hai Phong', 'Trần Văn Tùng', '0123456', 'tungtv.soict@gmail.com', 'Hà Nội', '2017-01-04', '2017-01-05', 1, '1880000', '6-1', '500000', '123123', 1, '2017-01-04 02:16:44');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `booking_tour`
+-- Table structure for table `booking_tour`
 --
 
-CREATE TABLE `booking_tour` (
+CREATE TABLE IF NOT EXISTS `booking_tour` (
   `id` int(11) NOT NULL,
   `tour_id` int(11) NOT NULL,
   `name_tour` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -105,10 +105,10 @@ CREATE TABLE `booking_tour` (
   `request` text COLLATE utf8_unicode_ci,
   `status` int(11) NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `booking_tour`
+-- Dumping data for table `booking_tour`
 --
 
 INSERT INTO `booking_tour` (`id`, `tour_id`, `name_tour`, `name_customer`, `language`, `phone`, `email`, `address`, `departure_day`, `adults`, `children_5_10`, `children_5`, `price`, `price_children`, `price_children_under_5`, `total_price`, `request`, `status`, `created`) VALUES
@@ -118,10 +118,10 @@ INSERT INTO `booking_tour` (`id`, `tour_id`, `name_tour`, `name_customer`, `lang
 -- --------------------------------------------------------
 
 --
--- Structure de la table `config`
+-- Table structure for table `config`
 --
 
-CREATE TABLE `config` (
+CREATE TABLE IF NOT EXISTS `config` (
   `Id` int(11) NOT NULL,
   `Logo` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Icon` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -139,10 +139,10 @@ CREATE TABLE `config` (
   `Hotline_hcm` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Email_hcm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Map_hcm` text COLLATE utf8_unicode_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `config`
+-- Dumping data for table `config`
 --
 
 INSERT INTO `config` (`Id`, `Logo`, `Icon`, `Name`, `Address`, `Phone`, `fax`, `Hotline`, `Email`, `Website`, `Map`, `Address_hcm`, `Phone_hcm`, `fax_hcm`, `Hotline_hcm`, `Email_hcm`, `Map_hcm`) VALUES
@@ -151,10 +151,10 @@ INSERT INTO `config` (`Id`, `Logo`, `Icon`, `Name`, `Address`, `Phone`, `fax`, `
 -- --------------------------------------------------------
 
 --
--- Structure de la table `contact`
+-- Table structure for table `contact`
 --
 
-CREATE TABLE `contact` (
+CREATE TABLE IF NOT EXISTS `contact` (
   `id` int(11) NOT NULL,
   `name_kh` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -164,10 +164,10 @@ CREATE TABLE `contact` (
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `status` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `contact`
+-- Dumping data for table `contact`
 --
 
 INSERT INTO `contact` (`id`, `name_kh`, `address`, `phone`, `email`, `title`, `content`, `created`, `status`) VALUES
@@ -214,10 +214,10 @@ INSERT INTO `contact` (`id`, `name_kh`, `address`, `phone`, `email`, `title`, `c
 -- --------------------------------------------------------
 
 --
--- Structure de la table `danhmuc_1`
+-- Table structure for table `danhmuc_1`
 --
 
-CREATE TABLE `danhmuc_1` (
+CREATE TABLE IF NOT EXISTS `danhmuc_1` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -226,10 +226,10 @@ CREATE TABLE `danhmuc_1` (
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `danhmuc_1`
+-- Dumping data for table `danhmuc_1`
 --
 
 INSERT INTO `danhmuc_1` (`id`, `name`, `name_url`, `img`, `position`, `title`, `keyword`, `description`) VALUES
@@ -240,10 +240,10 @@ INSERT INTO `danhmuc_1` (`id`, `name`, `name_url`, `img`, `position`, `title`, `
 -- --------------------------------------------------------
 
 --
--- Structure de la table `danhmuc_2`
+-- Table structure for table `danhmuc_2`
 --
 
-CREATE TABLE `danhmuc_2` (
+CREATE TABLE IF NOT EXISTS `danhmuc_2` (
   `id` int(11) NOT NULL,
   `danhmuc1_id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -253,10 +253,10 @@ CREATE TABLE `danhmuc_2` (
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `danhmuc_2`
+-- Dumping data for table `danhmuc_2`
 --
 
 INSERT INTO `danhmuc_2` (`id`, `danhmuc1_id`, `name`, `name_url`, `img`, `position`, `title`, `keyword`, `description`) VALUES
@@ -274,10 +274,10 @@ INSERT INTO `danhmuc_2` (`id`, `danhmuc1_id`, `name`, `name_url`, `img`, `positi
 -- --------------------------------------------------------
 
 --
--- Structure de la table `danhmuc_khachsan`
+-- Table structure for table `danhmuc_khachsan`
 --
 
-CREATE TABLE `danhmuc_khachsan` (
+CREATE TABLE IF NOT EXISTS `danhmuc_khachsan` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `name_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -286,10 +286,10 @@ CREATE TABLE `danhmuc_khachsan` (
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `danhmuc_khachsan`
+-- Dumping data for table `danhmuc_khachsan`
 --
 
 INSERT INTO `danhmuc_khachsan` (`id`, `name`, `name_url`, `img`, `position`, `title`, `keyword`, `description`) VALUES
@@ -300,16 +300,16 @@ INSERT INTO `danhmuc_khachsan` (`id`, `name`, `name_url`, `img`, `position`, `ti
 -- --------------------------------------------------------
 
 --
--- Structure de la table `danhmuc_room_type`
+-- Table structure for table `danhmuc_room_type`
 --
 
-CREATE TABLE `danhmuc_room_type` (
+CREATE TABLE IF NOT EXISTS `danhmuc_room_type` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `danhmuc_room_type`
+-- Dumping data for table `danhmuc_room_type`
 --
 
 INSERT INTO `danhmuc_room_type` (`id`, `name`) VALUES
@@ -322,10 +322,10 @@ INSERT INTO `danhmuc_room_type` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `danhmuc_tintuc`
+-- Table structure for table `danhmuc_tintuc`
 --
 
-CREATE TABLE `danhmuc_tintuc` (
+CREATE TABLE IF NOT EXISTS `danhmuc_tintuc` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `name_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -334,10 +334,10 @@ CREATE TABLE `danhmuc_tintuc` (
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `danhmuc_tintuc`
+-- Dumping data for table `danhmuc_tintuc`
 --
 
 INSERT INTO `danhmuc_tintuc` (`id`, `name`, `name_url`, `img`, `position`, `title`, `keyword`, `description`) VALUES
@@ -347,17 +347,17 @@ INSERT INTO `danhmuc_tintuc` (`id`, `name`, `name_url`, `img`, `position`, `titl
 -- --------------------------------------------------------
 
 --
--- Structure de la table `departure`
+-- Table structure for table `departure`
 --
 
-CREATE TABLE `departure` (
+CREATE TABLE IF NOT EXISTS `departure` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `departure`
+-- Dumping data for table `departure`
 --
 
 INSERT INTO `departure` (`id`, `name`, `position`) VALUES
@@ -375,10 +375,10 @@ INSERT INTO `departure` (`id`, `name`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `info_mix`
+-- Table structure for table `info_mix`
 --
 
-CREATE TABLE `info_mix` (
+CREATE TABLE IF NOT EXISTS `info_mix` (
   `id` int(11) NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -387,10 +387,10 @@ CREATE TABLE `info_mix` (
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `info_mix`
+-- Dumping data for table `info_mix`
 --
 
 INSERT INTO `info_mix` (`id`, `img`, `name`, `name_url`, `content`, `title`, `keyword`, `description`) VALUES
@@ -404,10 +404,10 @@ INSERT INTO `info_mix` (`id`, `img`, `name`, `name_url`, `content`, `title`, `ke
 -- --------------------------------------------------------
 
 --
--- Structure de la table `khachsan`
+-- Table structure for table `khachsan`
 --
 
-CREATE TABLE `khachsan` (
+CREATE TABLE IF NOT EXISTS `khachsan` (
   `id` int(11) NOT NULL,
   `danhmuc_id` int(11) NOT NULL,
   `highlights` tinyint(1) NOT NULL,
@@ -425,10 +425,10 @@ CREATE TABLE `khachsan` (
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `khachsan`
+-- Dumping data for table `khachsan`
 --
 
 INSERT INTO `khachsan` (`id`, `danhmuc_id`, `highlights`, `name`, `name_url`, `start`, `price`, `dichvu`, `img`, `address`, `phone`, `email`, `map`, `content`, `title`, `keyword`, `description`) VALUES
@@ -436,24 +436,24 @@ INSERT INTO `khachsan` (`id`, `danhmuc_id`, `highlights`, `name`, `name_url`, `s
 (2, 1, 1, 'Khách Sạn AVANI Hải Phòng Harbour View', 'khach-san-avani-hai-phong-harbour-view', 3, '600000', ' Ăn sáng miễn phí - Wifi miễn phí - Hồ bơi-Dịch vụ hội họp', '/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/2.jpg', '12 Trần Phú, Ngô Quyền, Hải Phòng', '(+84)94 161 9956', NULL, '<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3728.1911078786397!2d106.68952!3d20.864346!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1483069612005" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>', '<div class="pHotelDes" font-size:="" open="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: Arial, ">\r\n	<p style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px;">\r\n		<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">Kh&aacute;ch Sạn AVANI Hải Ph&ograve;ng Harbour View</span>&nbsp;l&agrave; kh&aacute;ch sạn đạt ti&ecirc;u chuẩn Quốc tế 4 sao đầu ti&ecirc;n ở Hải Ph&ograve;ng. Kh&aacute;ch sạn c&oacute; 122 ph&ograve;ng nghỉ ở đ&acirc;y được thiết kế sang trọng v&agrave; trang bị đầy đủ vật dụng cao cấp, c&aacute;c ph&ograve;ng c&oacute; view hướng ra th&agrave;nh phố, hồ bơi.&nbsp;<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Nh&agrave; h&agrave;ng Nam Phương phục vụ c&aacute;c m&oacute;n ăn mang đậm phong c&aacute;ch &Aacute; - &Acirc;u ph&ugrave; hợp với khẩu vị thực kh&aacute;ch trong nước v&agrave; quốc tế. Kh&aacute;ch sạn c&ograve;n tổ chức những bữa tiệc ngo&agrave;i trời tho&aacute;ng m&aacute;t. Bạn c&oacute; thể thưởng thức những ly cocktail, c&agrave; ph&ecirc; thơm ngon trong &acirc;m nhạc dịu nhẹ của La Terrasse v&agrave; Lobby Lounge &amp; Bar.&nbsp;<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Kh&aacute;ch sạn c&ograve;n c&oacute; hệ thống ph&ograve;ng họp với sức chứa lớn thường xuy&ecirc;n tổ chức sự kiện, hội thảo ở Hải Ph&ograve;ng. Ngo&agrave;i ra, khi lưu tr&uacute; tại đ&acirc;y Qu&yacute; kh&aacute;ch h&atilde;y thư gi&atilde;n với liệu tr&igrave;nh spa cao cấp, r&egrave;n luyện sức khỏe với ph&ograve;ng tập gym hiện đại v&agrave; tận hưởng c&aacute;c dịch vụ kh&aacute;c.</p>\r\n	<div>\r\n		&nbsp;</div>\r\n</div>\r\n<p>\r\n	&nbsp;</p>\r\n', 'Khách Sạn AVANI Hải Phòng Harbour View', 'Khách Sạn AVANI Hải Phòng Harbour View', 'Khách Sạn AVANI Hải Phòng Harbour View'),
 (3, 1, 1, 'Khách sạn Hữu Nghị Hải Phòng', 'khach-san-huu-nghi-hai-phong', 5, '1129000', ' Ăn sáng miễn phí - Dịch vụ hội họp', '/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/3.jpg', 'Số 60A Điện Biên Phủ, Hải Phòng', '(+84)94 161 9956', NULL, '<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3728.254991822669!2d106.684575!3d20.86177!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1483069748616" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>', '<div class="pHotelDes" font-size:="" open="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: Arial, ">\r\n	<p style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px;">\r\n		<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">Kh&aacute;ch sạn Hữu Nghị Hải Ph&ograve;ng</span>&nbsp;l&agrave; kh&aacute;ch sạn đạt ti&ecirc;u chuẩn Quốc tế 4 sao, mang n&eacute;t cổ k&iacute;nh sang trọng với hệ thống 140 ph&ograve;ng bao gồm: biệt thự, dịch vụ căn hộ cho thu&ecirc;, ph&ograve;ng ốc cao cấp với nội thất hiện đại, tiện nghi nh&igrave;n ra cảng biển v&agrave; quan s&aacute;t to&agrave;n cảnh th&agrave;nh phố.&nbsp;<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Chuỗi nh&agrave; h&agrave;ng phục vụ c&aacute;c m&oacute;n ăn &Acirc;u - &Aacute; mang hương vị độc đ&aacute;o với kh&ocirc;ng gian ph&ograve;ng Vip ri&ecirc;ng tư v&agrave; quầy bar hiện đại. Hệ thống ph&ograve;ng hội nghị, hội thảo v&agrave; ph&ograve;ng đa chức năng chuy&ecirc;n nghiệp.&nbsp;<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Kh&aacute;ch sạn c&oacute; s&acirc;n chơi tennis, hồ bơi, ph&ograve;ng tập thể dục... nhằm đ&aacute;p ứng nhu cầu r&egrave;n luyện sức khỏe v&agrave; giải tr&iacute; cho kh&aacute;ch h&agrave;ng.</p>\r\n	<div>\r\n		&nbsp;</div>\r\n</div>\r\n<p>\r\n	&nbsp;</p>\r\n', 'Khách sạn Hữu Nghị Hải Phòng', 'Khách sạn Hữu Nghị Hải Phòng', 'Khách sạn Hữu Nghị Hải Phòng'),
 (4, 1, 1, 'Khách sạn Seastar', 'khach-san-seastar', 5, '1009000', ' Ăn sáng miễn phí - Wifi miễn phí - Hồ bơi - Dịch vụ hội họp', '/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/3.jpg', '1/3A Lê Hồng Phong, Quận Ngô Quyền, Hải Phòng', '(+84)94 161 9956', NULL, '<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14915.065447524628!2d106.712712!3d20.841139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1483069919997" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>', '<div class="pHotelDes" font-size:="" open="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: Arial, ">\r\n	<p style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px;">\r\n		<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">Kh&aacute;ch sạn Seastar</span>&nbsp;l&agrave; sự kết hợp h&agrave;i ho&agrave; giữa kiến tr&uacute;c hiện đại v&agrave; những n&eacute;t độc đ&aacute;o mang đậm phong c&aacute;ch &Aacute; Đ&ocirc;ng. Kh&aacute;ch sạn c&oacute; 90 ph&ograve;ng nghỉ được trang bị vật dụng tiện nghi, đầy đủ. Qu&yacute; kh&aacute;ch c&oacute; thể lựa chọn ph&ograve;ng c&oacute; view hướng ra hồ, cảng hoặc th&agrave;nh phố.&nbsp;<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Seastar c&ograve;n c&oacute; hệ thống ph&ograve;ng họp với sức chứa lớn, dịch vụ tổ chức tiệc cưới. Ngo&agrave;i ra c&ograve;n c&oacute; một số dịch vụ thư gi&atilde;n, giải tr&iacute; kh&aacute;c như liệu tr&igrave;nh&nbsp; m&aacute;t xa kiểu Th&aacute;i, ph&ograve;ng x&ocirc;ng hơi kh&ocirc;, ph&ograve;ng tập thể dục,...<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Hệ thống nh&agrave; h&agrave;ng tr&ecirc;n tầng 1 Jupiter v&agrave; quầy bar tại sảnh, tại c&acirc;u lac bộ.&nbsp;Qu&yacute; kh&aacute;ch c&oacute; thể tự do lựa chọn những m&oacute;n ăn, đồ uống hợp với khẩu vị của m&igrave;nh.</p>\r\n	<div>\r\n		&nbsp;</div>\r\n</div>\r\n<p>\r\n	&nbsp;</p>\r\n', 'Khách sạn Seastar', 'Khách sạn Seastar', 'Khách sạn Seastar'),
-(5, 1, 1, 'Khách Sạn Classic Hoàng Long', 'khach-san-classic-hoang-long', 3, '830000', ' Ăn sáng miễn phí-  Wifi miễn phí  -Dịch vụ hội họp', '/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/5.jpg', '25 Trần Quang Khải, Phường Hoàng Văn Thụ, Quận Hồng Bàng, Hải Phòng', '(+84)94 161 9956', 'test@gmail.com', '<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14915.065447524628!2d106.712712!3d20.841139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1483069919997" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>', '<div class="pHotelDes" font-size:="" open="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: Arial, ">\r\n	<p style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px;">\r\n		<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">Kh&aacute;ch Sạn Classic Ho&agrave;ng Long</span>&nbsp;được thiết kế theo phong c&aacute;ch cổ điển phương T&acirc;y v&agrave; phương Đ&ocirc;ng. Kh&aacute;ch sạn c&oacute; 54 ph&ograve;ng nghỉ bao gồm c&aacute;c loại: Premium, Superior, Suite, Excutive Deluxe, Classic Suite. Mỗi ph&ograve;ng đều được trang bị vật dụng tiện nghi, m&agrave;u sắc h&agrave;i h&ograve;a dễ chịu.<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Nh&agrave; h&agrave;ng Ancient được trang tr&iacute; theo phong c&aacute;ch cổ xưa với bộ sưu tập gốm sứ ch&acirc;u &Aacute; tinh tế. Đến đ&acirc;y thực kh&aacute;ch sẽ được thưởng thức những m&oacute;n ăn Việt Nam, ch&acirc;u &Aacute; hấp dẫn. Cafe Crystallize từ tầng 17 l&agrave; nơi thưởng thức những ly c&agrave; ph&ecirc; thơm ngon v&agrave; thưởng ngoạn cảnh đẹp th&agrave;nh phố từ tr&ecirc;n cao.<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Ngo&agrave;i ra, Qu&yacute; kh&aacute;ch c&oacute; thể thư gi&atilde;n với những liệu tr&igrave;nh spa l&agrave;m đẹp da, ph&ograve;ng x&ocirc;ng hơi phục hồi sức khỏe từ kh&aacute;ch sạn.</p>\r\n	<div>\r\n		&nbsp;</div>\r\n</div>\r\n<p>\r\n	&nbsp;</p>\r\n', 'Khách Sạn Classic Hoàng Long', 'Khách Sạn Classic Hoàng Long', 'Khách Sạn Classic Hoàng Long');
+(5, 2, 1, 'Khách Sạn Classic Hoàng Long', 'khach-san-classic-hoang-long', 3, '830000', ' Ăn sáng miễn phí-  Wifi miễn phí  -Dịch vụ hội họp', '/azbooking/view/admin/Themes/kcfinder/upload/images/khachsan/5.jpg', '25 Trần Quang Khải, Phường Hoàng Văn Thụ, Quận Hồng Bàng, Hải Phòng', '(+84)94 161 9956', 'test@gmail.com', '<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14915.065447524628!2d106.712712!3d20.841139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2sus!4v1483069919997" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>', '<div class="pHotelDes" font-size:="" open="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: Arial, ">\r\n	<p style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px;">\r\n		<span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 700;">Kh&aacute;ch Sạn Classic Ho&agrave;ng Long</span>&nbsp;được thiết kế theo phong c&aacute;ch cổ điển phương T&acirc;y v&agrave; phương Đ&ocirc;ng. Kh&aacute;ch sạn c&oacute; 54 ph&ograve;ng nghỉ bao gồm c&aacute;c loại: Premium, Superior, Suite, Excutive Deluxe, Classic Suite. Mỗi ph&ograve;ng đều được trang bị vật dụng tiện nghi, m&agrave;u sắc h&agrave;i h&ograve;a dễ chịu.<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Nh&agrave; h&agrave;ng Ancient được trang tr&iacute; theo phong c&aacute;ch cổ xưa với bộ sưu tập gốm sứ ch&acirc;u &Aacute; tinh tế. Đến đ&acirc;y thực kh&aacute;ch sẽ được thưởng thức những m&oacute;n ăn Việt Nam, ch&acirc;u &Aacute; hấp dẫn. Cafe Crystallize từ tầng 17 l&agrave; nơi thưởng thức những ly c&agrave; ph&ecirc; thơm ngon v&agrave; thưởng ngoạn cảnh đẹp th&agrave;nh phố từ tr&ecirc;n cao.<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />\r\n		Ngo&agrave;i ra, Qu&yacute; kh&aacute;ch c&oacute; thể thư gi&atilde;n với những liệu tr&igrave;nh spa l&agrave;m đẹp da, ph&ograve;ng x&ocirc;ng hơi phục hồi sức khỏe từ kh&aacute;ch sạn.</p>\r\n	<div>\r\n		&nbsp;</div>\r\n</div>\r\n<p>\r\n	&nbsp;</p>\r\n', 'Khách Sạn Classic Hoàng Long', 'Khách Sạn Classic Hoàng Long', 'Khách Sạn Classic Hoàng Long');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `khachsan_img`
+-- Table structure for table `khachsan_img`
 --
 
-CREATE TABLE `khachsan_img` (
+CREATE TABLE IF NOT EXISTS `khachsan_img` (
   `id` int(11) NOT NULL,
   `danhmuc_id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `khachsan_img`
+-- Dumping data for table `khachsan_img`
 --
 
 INSERT INTO `khachsan_img` (`id`, `danhmuc_id`, `name`, `img`, `position`) VALUES
@@ -467,10 +467,10 @@ INSERT INTO `khachsan_img` (`id`, `danhmuc_id`, `name`, `img`, `position`) VALUE
 -- --------------------------------------------------------
 
 --
--- Structure de la table `khachsan_room_price`
+-- Table structure for table `khachsan_room_price`
 --
 
-CREATE TABLE `khachsan_room_price` (
+CREATE TABLE IF NOT EXISTS `khachsan_room_price` (
   `id` int(11) NOT NULL,
   `danhmuc_id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -480,10 +480,10 @@ CREATE TABLE `khachsan_room_price` (
   `price` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `amount_people` int(11) NOT NULL,
   `amount_room` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `khachsan_room_price`
+-- Dumping data for table `khachsan_room_price`
 --
 
 INSERT INTO `khachsan_room_price` (`id`, `danhmuc_id`, `name`, `img`, `description`, `dichvu`, `price`, `amount_people`, `amount_room`) VALUES
@@ -498,20 +498,20 @@ INSERT INTO `khachsan_room_price` (`id`, `danhmuc_id`, `name`, `img`, `descripti
 -- --------------------------------------------------------
 
 --
--- Structure de la table `menu`
+-- Table structure for table `menu`
 --
 
-CREATE TABLE `menu` (
+CREATE TABLE IF NOT EXISTS `menu` (
   `id` int(11) NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `menu`
+-- Dumping data for table `menu`
 --
 
 INSERT INTO `menu` (`id`, `img`, `name`, `title`, `keyword`, `description`) VALUES
@@ -532,10 +532,10 @@ INSERT INTO `menu` (`id`, `img`, `name`, `title`, `keyword`, `description`) VALU
 -- --------------------------------------------------------
 
 --
--- Structure de la table `news`
+-- Table structure for table `news`
 --
 
-CREATE TABLE `news` (
+CREATE TABLE IF NOT EXISTS `news` (
   `id` int(11) NOT NULL,
   `danhmuc_id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -547,10 +547,10 @@ CREATE TABLE `news` (
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL,
   `created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `news`
+-- Dumping data for table `news`
 --
 
 INSERT INTO `news` (`id`, `danhmuc_id`, `name`, `name_url`, `img`, `view`, `content`, `title`, `keyword`, `description`, `created`) VALUES
@@ -565,18 +565,18 @@ INSERT INTO `news` (`id`, `danhmuc_id`, `name`, `name_url`, `img`, `view`, `cont
 -- --------------------------------------------------------
 
 --
--- Structure de la table `price_khachsan`
+-- Table structure for table `price_khachsan`
 --
 
-CREATE TABLE `price_khachsan` (
+CREATE TABLE IF NOT EXISTS `price_khachsan` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `price_khachsan`
+-- Dumping data for table `price_khachsan`
 --
 
 INSERT INTO `price_khachsan` (`id`, `name`, `value`, `position`) VALUES
@@ -597,18 +597,18 @@ INSERT INTO `price_khachsan` (`id`, `name`, `value`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `price_timkiem`
+-- Table structure for table `price_timkiem`
 --
 
-CREATE TABLE `price_timkiem` (
+CREATE TABLE IF NOT EXISTS `price_timkiem` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `price_timkiem`
+-- Dumping data for table `price_timkiem`
 --
 
 INSERT INTO `price_timkiem` (`id`, `name`, `value`, `position`) VALUES
@@ -629,16 +629,16 @@ INSERT INTO `price_timkiem` (`id`, `name`, `value`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `quyen`
+-- Table structure for table `quyen`
 --
 
-CREATE TABLE `quyen` (
+CREATE TABLE IF NOT EXISTS `quyen` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `quyen`
+-- Dumping data for table `quyen`
 --
 
 INSERT INTO `quyen` (`id`, `name`) VALUES
@@ -648,10 +648,10 @@ INSERT INTO `quyen` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `slide`
+-- Table structure for table `slide`
 --
 
-CREATE TABLE `slide` (
+CREATE TABLE IF NOT EXISTS `slide` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `contents_short` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -659,10 +659,10 @@ CREATE TABLE `slide` (
   `img_small` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `link` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `slide`
+-- Dumping data for table `slide`
 --
 
 INSERT INTO `slide` (`id`, `name`, `contents_short`, `img`, `img_small`, `link`, `position`) VALUES
@@ -673,20 +673,20 @@ INSERT INTO `slide` (`id`, `name`, `contents_short`, `img`, `img_small`, `link`,
 -- --------------------------------------------------------
 
 --
--- Structure de la table `social`
+-- Table structure for table `social`
 --
 
-CREATE TABLE `social` (
+CREATE TABLE IF NOT EXISTS `social` (
   `id` int(11) NOT NULL,
   `facebook` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `twitter` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `youtube` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `google` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `rss` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `social`
+-- Dumping data for table `social`
 --
 
 INSERT INTO `social` (`id`, `facebook`, `twitter`, `youtube`, `google`, `rss`) VALUES
@@ -695,20 +695,20 @@ INSERT INTO `social` (`id`, `facebook`, `twitter`, `youtube`, `google`, `rss`) V
 -- --------------------------------------------------------
 
 --
--- Structure de la table `subport`
+-- Table structure for table `subport`
 --
 
-CREATE TABLE `subport` (
+CREATE TABLE IF NOT EXISTS `subport` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `phone` varchar(205) COLLATE utf8_unicode_ci DEFAULT NULL,
   `skype` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `yahoo` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `subport`
+-- Dumping data for table `subport`
 --
 
 INSERT INTO `subport` (`id`, `name`, `phone`, `skype`, `email`, `yahoo`) VALUES
@@ -718,18 +718,18 @@ INSERT INTO `subport` (`id`, `name`, `phone`, `skype`, `email`, `yahoo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tag`
+-- Table structure for table `tag`
 --
 
-CREATE TABLE `tag` (
+CREATE TABLE IF NOT EXISTS `tag` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `link` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `tag`
+-- Dumping data for table `tag`
 --
 
 INSERT INTO `tag` (`id`, `name`, `link`, `position`) VALUES
@@ -742,18 +742,18 @@ INSERT INTO `tag` (`id`, `name`, `link`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tieuchi`
+-- Table structure for table `tieuchi`
 --
 
-CREATE TABLE `tieuchi` (
+CREATE TABLE IF NOT EXISTS `tieuchi` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `tieuchi`
+-- Dumping data for table `tieuchi`
 --
 
 INSERT INTO `tieuchi` (`id`, `name`, `img`, `position`) VALUES
@@ -765,10 +765,10 @@ INSERT INTO `tieuchi` (`id`, `name`, `img`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tour`
+-- Table structure for table `tour`
 --
 
-CREATE TABLE `tour` (
+CREATE TABLE IF NOT EXISTS `tour` (
   `id` int(11) NOT NULL,
   `DanhMuc1Id` int(11) NOT NULL,
   `DanhMuc2Id` int(11) NOT NULL,
@@ -803,10 +803,10 @@ CREATE TABLE `tour` (
   `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL,
   `inclusion` text COLLATE utf8_unicode_ci,
   `exclusion` text COLLATE utf8_unicode_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `tour`
+-- Dumping data for table `tour`
 --
 
 INSERT INTO `tour` (`id`, `DanhMuc1Id`, `DanhMuc2Id`, `promotion`, `packages`, `name`, `name_url`, `count_down`, `code`, `img`, `price_sales`, `price`, `price_2`, `price_3`, `price_4`, `price_5`, `price_6`, `durations`, `departure`, `destination`, `departure_time`, `vehicle`, `hotel`, `summary`, `highlights`, `schedule`, `price_list`, `content`, `list_img`, `title`, `keyword`, `description`, `inclusion`, `exclusion`) VALUES
@@ -831,184 +831,184 @@ INSERT INTO `tour` (`id`, `DanhMuc1Id`, `DanhMuc2Id`, `promotion`, `packages`, `
 -- --------------------------------------------------------
 
 --
--- Structure de la table `video`
+-- Table structure for table `video`
 --
 
-CREATE TABLE `video` (
+CREATE TABLE IF NOT EXISTS `video` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `link_video` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `highlights` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `video`
+-- Dumping data for table `video`
 --
 
 INSERT INTO `video` (`id`, `name`, `link_video`, `highlights`) VALUES
 (1, 'INTRODUCTION - MIXTOURIST', 'https://www.youtube.com/embed/7vEHE6lTxEE', 1);
 
 --
--- Index pour les tables exportées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Index pour la table `booking_hotel`
+-- Indexes for table `booking_hotel`
 --
 ALTER TABLE `booking_hotel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `booking_tour`
+-- Indexes for table `booking_tour`
 --
 ALTER TABLE `booking_tour`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `config`
+-- Indexes for table `config`
 --
 ALTER TABLE `config`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Index pour la table `contact`
+-- Indexes for table `contact`
 --
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `danhmuc_1`
+-- Indexes for table `danhmuc_1`
 --
 ALTER TABLE `danhmuc_1`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `danhmuc_2`
+-- Indexes for table `danhmuc_2`
 --
 ALTER TABLE `danhmuc_2`
   ADD PRIMARY KEY (`id`),
   ADD KEY `danhmuc1_id` (`danhmuc1_id`);
 
 --
--- Index pour la table `danhmuc_khachsan`
+-- Indexes for table `danhmuc_khachsan`
 --
 ALTER TABLE `danhmuc_khachsan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `danhmuc_room_type`
+-- Indexes for table `danhmuc_room_type`
 --
 ALTER TABLE `danhmuc_room_type`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `danhmuc_tintuc`
+-- Indexes for table `danhmuc_tintuc`
 --
 ALTER TABLE `danhmuc_tintuc`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `departure`
+-- Indexes for table `departure`
 --
 ALTER TABLE `departure`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `info_mix`
+-- Indexes for table `info_mix`
 --
 ALTER TABLE `info_mix`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `khachsan`
+-- Indexes for table `khachsan`
 --
 ALTER TABLE `khachsan`
   ADD PRIMARY KEY (`id`),
   ADD KEY `danhmuc_id` (`danhmuc_id`);
 
 --
--- Index pour la table `khachsan_img`
+-- Indexes for table `khachsan_img`
 --
 ALTER TABLE `khachsan_img`
   ADD PRIMARY KEY (`id`),
   ADD KEY `danhmuc_id` (`danhmuc_id`);
 
 --
--- Index pour la table `khachsan_room_price`
+-- Indexes for table `khachsan_room_price`
 --
 ALTER TABLE `khachsan_room_price`
   ADD PRIMARY KEY (`id`),
   ADD KEY `danhmuc_id` (`danhmuc_id`);
 
 --
--- Index pour la table `menu`
+-- Indexes for table `menu`
 --
 ALTER TABLE `menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `news`
+-- Indexes for table `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`),
   ADD KEY `danhmuc_id` (`danhmuc_id`);
 
 --
--- Index pour la table `price_khachsan`
+-- Indexes for table `price_khachsan`
 --
 ALTER TABLE `price_khachsan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `price_timkiem`
+-- Indexes for table `price_timkiem`
 --
 ALTER TABLE `price_timkiem`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `quyen`
+-- Indexes for table `quyen`
 --
 ALTER TABLE `quyen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `slide`
+-- Indexes for table `slide`
 --
 ALTER TABLE `slide`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `social`
+-- Indexes for table `social`
 --
 ALTER TABLE `social`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `subport`
+-- Indexes for table `subport`
 --
 ALTER TABLE `subport`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `tag`
+-- Indexes for table `tag`
 --
 ALTER TABLE `tag`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `tieuchi`
+-- Indexes for table `tieuchi`
 --
 ALTER TABLE `tieuchi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `tour`
+-- Indexes for table `tour`
 --
 ALTER TABLE `tour`
   ADD PRIMARY KEY (`id`),
@@ -1016,186 +1016,186 @@ ALTER TABLE `tour`
   ADD KEY `DanhMuc2Id` (`DanhMuc2Id`);
 
 --
--- Index pour la table `video`
+-- Indexes for table `video`
 --
 ALTER TABLE `video`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT pour la table `booking_hotel`
+-- AUTO_INCREMENT for table `booking_hotel`
 --
 ALTER TABLE `booking_hotel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
 --
--- AUTO_INCREMENT pour la table `booking_tour`
+-- AUTO_INCREMENT for table `booking_tour`
 --
 ALTER TABLE `booking_tour`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
 --
--- AUTO_INCREMENT pour la table `config`
+-- AUTO_INCREMENT for table `config`
 --
 ALTER TABLE `config`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT pour la table `contact`
+-- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
 --
--- AUTO_INCREMENT pour la table `danhmuc_1`
+-- AUTO_INCREMENT for table `danhmuc_1`
 --
 ALTER TABLE `danhmuc_1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT pour la table `danhmuc_2`
+-- AUTO_INCREMENT for table `danhmuc_2`
 --
 ALTER TABLE `danhmuc_2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT pour la table `danhmuc_khachsan`
+-- AUTO_INCREMENT for table `danhmuc_khachsan`
 --
 ALTER TABLE `danhmuc_khachsan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT pour la table `danhmuc_room_type`
+-- AUTO_INCREMENT for table `danhmuc_room_type`
 --
 ALTER TABLE `danhmuc_room_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `danhmuc_tintuc`
+-- AUTO_INCREMENT for table `danhmuc_tintuc`
 --
 ALTER TABLE `danhmuc_tintuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT pour la table `departure`
+-- AUTO_INCREMENT for table `departure`
 --
 ALTER TABLE `departure`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT pour la table `info_mix`
+-- AUTO_INCREMENT for table `info_mix`
 --
 ALTER TABLE `info_mix`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT pour la table `khachsan`
+-- AUTO_INCREMENT for table `khachsan`
 --
 ALTER TABLE `khachsan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `khachsan_img`
+-- AUTO_INCREMENT for table `khachsan_img`
 --
 ALTER TABLE `khachsan_img`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT pour la table `khachsan_room_price`
+-- AUTO_INCREMENT for table `khachsan_room_price`
 --
 ALTER TABLE `khachsan_room_price`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT pour la table `menu`
+-- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
--- AUTO_INCREMENT pour la table `news`
+-- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `price_khachsan`
+-- AUTO_INCREMENT for table `price_khachsan`
 --
 ALTER TABLE `price_khachsan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
--- AUTO_INCREMENT pour la table `price_timkiem`
+-- AUTO_INCREMENT for table `price_timkiem`
 --
 ALTER TABLE `price_timkiem`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
--- AUTO_INCREMENT pour la table `quyen`
+-- AUTO_INCREMENT for table `quyen`
 --
 ALTER TABLE `quyen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT pour la table `slide`
+-- AUTO_INCREMENT for table `slide`
 --
 ALTER TABLE `slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT pour la table `social`
+-- AUTO_INCREMENT for table `social`
 --
 ALTER TABLE `social`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT pour la table `subport`
+-- AUTO_INCREMENT for table `subport`
 --
 ALTER TABLE `subport`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT pour la table `tag`
+-- AUTO_INCREMENT for table `tag`
 --
 ALTER TABLE `tag`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `tieuchi`
+-- AUTO_INCREMENT for table `tieuchi`
 --
 ALTER TABLE `tieuchi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT pour la table `tour`
+-- AUTO_INCREMENT for table `tour`
 --
 ALTER TABLE `tour`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT pour la table `video`
+-- AUTO_INCREMENT for table `video`
 --
 ALTER TABLE `video`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- Contraintes pour les tables exportées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `danhmuc_2`
+-- Constraints for table `danhmuc_2`
 --
 ALTER TABLE `danhmuc_2`
   ADD CONSTRAINT `danhmuc_2_ibfk_1` FOREIGN KEY (`danhmuc1_id`) REFERENCES `danhmuc_1` (`id`);
 
 --
--- Contraintes pour la table `khachsan`
+-- Constraints for table `khachsan`
 --
 ALTER TABLE `khachsan`
   ADD CONSTRAINT `khachsan_ibfk_1` FOREIGN KEY (`danhmuc_id`) REFERENCES `danhmuc_khachsan` (`id`);
 
 --
--- Contraintes pour la table `khachsan_img`
+-- Constraints for table `khachsan_img`
 --
 ALTER TABLE `khachsan_img`
   ADD CONSTRAINT `khachsan_img_ibfk_1` FOREIGN KEY (`danhmuc_id`) REFERENCES `khachsan` (`id`);
 
 --
--- Contraintes pour la table `khachsan_room_price`
+-- Constraints for table `khachsan_room_price`
 --
 ALTER TABLE `khachsan_room_price`
   ADD CONSTRAINT `khachsan_room_price_ibfk_1` FOREIGN KEY (`danhmuc_id`) REFERENCES `khachsan` (`id`);
 
 --
--- Contraintes pour la table `news`
+-- Constraints for table `news`
 --
 ALTER TABLE `news`
   ADD CONSTRAINT `news_ibfk_1` FOREIGN KEY (`danhmuc_id`) REFERENCES `danhmuc_tintuc` (`id`);
 
 --
--- Contraintes pour la table `tour`
+-- Constraints for table `tour`
 --
 ALTER TABLE `tour`
   ADD CONSTRAINT `tour_ibfk_1` FOREIGN KEY (`DanhMuc1Id`) REFERENCES `danhmuc_1` (`id`),
