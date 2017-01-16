@@ -1,0 +1,63 @@
+<?php
+class booking_hotel
+{
+    public $id,$hotel_id,$name_hotel,$name_customer,$phone,$email,$address,$from_date,$to_date,$num_member,$price,$price_room,$total_price,$request,$status,$created;
+    public function booking_hotel($data=array())
+    {
+    $this->id=isset($data['id'])?$data['id']:'';
+    $this->hotel_id=isset($data['hotel_id'])?$data['hotel_id']:'';
+    $this->name_hotel=isset($data['name_hotel'])?$data['name_hotel']:'';
+    $this->name_customer=isset($data['name_customer'])?$data['name_customer']:'';
+    $this->phone=isset($data['phone'])?$data['phone']:'';
+    $this->email=isset($data['email'])?$data['email']:'';
+    $this->address=isset($data['address'])?$data['address']:'';
+    $this->from_date=isset($data['from_date'])?$data['from_date']:'';
+        $this->to_date=isset($data['to_date'])?$data['to_date']:'';
+    $this->num_member=isset($data['num_member'])?$data['num_member']:'';
+    $this->price=isset($data['price'])?$data['price']:'';
+    $this->price_room=isset($data['price_room'])?$data['price_room']:'';
+    $this->total_price=isset($data['total_price'])?$data['total_price']:'';
+    $this->request=isset($data['request'])?$data['request']:'';
+    $this->status=isset($data['status'])?$data['status']:'';
+    $this->created=isset($data['created'])?$data['created']:'';
+          $this->encode();
+    }
+    public function encode()
+        {
+            $this->id=addslashes($this->id);
+            $this->hotel_id=addslashes($this->hotel_id);
+            $this->name_hotel=addslashes($this->name_hotel);
+            $this->name_customer=addslashes($this->name_customer);
+            $this->phone=addslashes($this->phone);
+            $this->email=addslashes($this->email);
+            $this->address=addslashes($this->address);
+            $this->from_date=addslashes($this->from_date);
+            $this->to_date=addslashes($this->to_date);
+            $this->num_member=addslashes($this->num_member);
+            $this->price=addslashes($this->price);
+            $this->price_room=addslashes($this->price_room);
+            $this->total_price=addslashes($this->total_price);
+            $this->request=addslashes($this->request);
+            $this->status=addslashes($this->status);
+            $this->created=addslashes($this->created);
+        }
+    public function decode()
+        {
+            $this->id=stripslashes($this->id);
+            $this->hotel_id=stripslashes($this->hotel_id);
+            $this->name_hotel=stripslashes($this->name_hotel);
+            $this->name_customer=stripslashes($this->name_customer);
+            $this->phone=stripslashes($this->phone);
+            $this->email=stripslashes($this->email);
+            $this->address=stripslashes($this->address);
+            $this->from_date=stripslashes($this->from_date);
+            $this->to_date=stripslashes($this->to_date);
+            $this->num_member=stripslashes($this->num_member);
+            $this->price=stripslashes($this->price);
+            $this->price_room=stripslashes($this->price_room);
+            $this->total_price=stripslashes($this->total_price);
+            $this->request=stripslashes($this->request);
+            $this->status=stripslashes($this->status);
+            $this->created=stripslashes($this->created);
+        }
+}
