@@ -1,0 +1,1 @@
+<div class="item"><img src="{img}" title="{name}" alt="{name}"></div>

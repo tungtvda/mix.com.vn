@@ -1,0 +1,43 @@
+#php_value upload_max_filesize 40M
+#php_value post_max_size 42M
+#Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.kzone.vn
+ErrorDocument 404 /404.php
+RewriteRule ^(.*)$ http://radio.kzone.vn/$1 [R=permanent,L]
+RewriteRule ^admin controller/admin/index.php
+RewriteRule ^login controller/admin/login.php
+RewriteRule ^tour/$ controller/default/chitietdanhmuc.php
+RewriteRule ^tour/page-([0-9]+)$ controller/default/chitietdanhmuc.php?page=$1
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/$ controller/default/chitietdanhmuc.php?Id=$1
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/chitietdanhmuc.php?Id=$1&page=$2
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ controller/default/chitietdanhmuc.php?Id=$1&Id_sub=$2
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/chitietdanhmuc.php?Id=$1&Id_sub=$2&page=$3
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&name_url=$2
+RewriteRule ^tour/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3
+RewriteRule ^dat-tour/ajax/$ controller/default/booking.php
+
+RewriteRule ^khach-san/$ controller/default/khachsan.php
+RewriteRule ^khach-san/page-([0-9]+)$ controller/default/khachsan.php?page=$1
+RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/$ controller/default/khachsan.php?Id=$1
+RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/khachsan.php?Id=$1&page=$2
+RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitietkhachsan.php?Id=$1&name_url=$2
+
+RewriteRule ^tin-tuc/$ controller/default/tintuc.php
+RewriteRule ^tin-tuc/page-([0-9]+)$ controller/default/tintuc.php?page=$1
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/$ controller/default/tintuc.php?Id=$1
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/tintuc.php?Id=$1&page=$2
+RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettintuc.php?Id=$1&name_url=$2
+
+
+
+RewriteRule ^tim-kiem-tour$ controller/default/timkiemtour.php
+RewriteRule ^tim-kiem-khach-san$ controller/default/timkiemkhachsan.php
+RewriteRule ^tim-kiem-tin-tuc$ controller/default/timkiemtintuc.php
+RewriteRule ^tim-kiem/$ controller/default/timkiem.php
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1
+
+RewriteRule ^check-map/$ controller/default/checkmap.php
+RewriteRule ^get-info-booking/$ controller/default/getinfobooking.php
+RewriteRule ^update-status-booking-hotel/$ controller/default/updatestatushotel.php

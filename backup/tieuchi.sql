@@ -1,0 +1,13 @@
+insert into tieuchi (name,img,position) values ('Tiêu chí 1','/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif','1');
+insert into tieuchi (name,img,position) values ('Tiêu chí 2','/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif','2');
+insert into tieuchi (name,img,position) values ('Tiêu chí 3','/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif','3');
+insert into tieuchi (name,img,position) values ('Tiêu chí 4','/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif','4');
+insert into tieuchi (name,img,position) values ('Tiêu chí 5','/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif','5');
+insert into tieuchi (name,img,position) values ('Tiêu chí 5','/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif','6');
+update tieuchi set name='Tiêu chí 6',img='/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/icon-slim-reizen-118x118.gif',position='6' where id=6;
+update tieuchi set name='Tiêu chí 1',img='/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/bus-tour.png',position='1' where id=1;
+delete from tieuchi where id=6;
+delete from tieuchi where id=5;
+update tieuchi set name='Tiêu chí 2',img='/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/bus-tour.png',position='2' where id=2;
+update tieuchi set name='Tiêu chí 3',img='/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/bus-tour.png',position='3' where id=3;
+update tieuchi set name='Tiêu chí 4',img='/azbooking/view/admin/Themes/kcfinder/upload/images/tieuchi/bus-tour.png',position='4' where id=4;

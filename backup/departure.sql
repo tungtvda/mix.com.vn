@@ -1,0 +1,11 @@
+insert into departure (name,position) values ('Hà Nội','1');
+insert into departure (name,position) values ('Hồ Chí Minh','2');
+insert into departure (name,position) values ('Đà Nẵng','3');
+insert into departure (name,position) values ('Cần Thơ','4');
+insert into departure (name,position) values ('Cần Thơ','5');
+update departure set name='Hải Phòng',position='5' where id=5;
+insert into departure (name,position) values ('Bình Dương','6');
+insert into departure (name,position) values ('Huế','7');
+insert into departure (name,position) values ('Nha Trang','8');
+insert into departure (name,position) values ('Quy Nhơn','9');
+insert into departure (name,position) values ('Đồng Nai','10');

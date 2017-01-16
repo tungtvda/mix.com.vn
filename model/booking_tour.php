@@ -1,0 +1,72 @@
+<?php
+class booking_tour
+{
+    public $id,$tour_id,$name_tour,$name_customer,$language,$phone,$email,$address,$departure_day,$adults,$children_5_10,$children_5,$price,$price_children,$price_children_under_5,$total_price,$request,$status,$created;
+    public function booking_tour($data=array())
+    {
+    $this->id=isset($data['id'])?$data['id']:'';
+    $this->tour_id=isset($data['tour_id'])?$data['tour_id']:'';
+    $this->name_tour=isset($data['name_tour'])?$data['name_tour']:'';
+    $this->name_customer=isset($data['name_customer'])?$data['name_customer']:'';
+    $this->language=isset($data['language'])?$data['language']:'';
+    $this->phone=isset($data['phone'])?$data['phone']:'';
+    $this->email=isset($data['email'])?$data['email']:'';
+    $this->address=isset($data['address'])?$data['address']:'';
+    $this->departure_day=isset($data['departure_day'])?$data['departure_day']:'';
+    $this->adults=isset($data['adults'])?$data['adults']:'';
+    $this->children_5_10=isset($data['children_5_10'])?$data['children_5_10']:'';
+    $this->children_5=isset($data['children_5'])?$data['children_5']:'';
+    $this->price=isset($data['price'])?$data['price']:'';
+    $this->price_children=isset($data['price_children'])?$data['price_children']:'';
+    $this->price_children_under_5=isset($data['price_children_under_5'])?$data['price_children_under_5']:'';
+    $this->total_price=isset($data['total_price'])?$data['total_price']:'';
+    $this->request=isset($data['request'])?$data['request']:'';
+    $this->status=isset($data['status'])?$data['status']:'';
+    $this->created=isset($data['created'])?$data['created']:'';
+          $this->encode();
+    }
+    public function encode()
+        {
+            $this->id=addslashes($this->id);
+            $this->tour_id=addslashes($this->tour_id);
+            $this->name_tour=addslashes($this->name_tour);
+            $this->name_customer=addslashes($this->name_customer);
+            $this->language=addslashes($this->language);
+            $this->phone=addslashes($this->phone);
+            $this->email=addslashes($this->email);
+            $this->address=addslashes($this->address);
+            $this->departure_day=addslashes($this->departure_day);
+            $this->adults=addslashes($this->adults);
+            $this->children_5_10=addslashes($this->children_5_10);
+            $this->children_5=addslashes($this->children_5);
+            $this->price=addslashes($this->price);
+            $this->price_children=addslashes($this->price_children);
+            $this->price_children_under_5=addslashes($this->price_children_under_5);
+            $this->total_price=addslashes($this->total_price);
+            $this->request=addslashes($this->request);
+            $this->status=addslashes($this->status);
+            $this->created=addslashes($this->created);
+        }
+    public function decode()
+        {
+            $this->id=stripslashes($this->id);
+            $this->tour_id=stripslashes($this->tour_id);
+            $this->name_tour=stripslashes($this->name_tour);
+            $this->name_customer=stripslashes($this->name_customer);
+            $this->language=stripslashes($this->language);
+            $this->phone=stripslashes($this->phone);
+            $this->email=stripslashes($this->email);
+            $this->address=stripslashes($this->address);
+            $this->departure_day=stripslashes($this->departure_day);
+            $this->adults=stripslashes($this->adults);
+            $this->children_5_10=stripslashes($this->children_5_10);
+            $this->children_5=stripslashes($this->children_5);
+            $this->price=stripslashes($this->price);
+            $this->price_children=stripslashes($this->price_children);
+            $this->price_children_under_5=stripslashes($this->price_children_under_5);
+            $this->total_price=stripslashes($this->total_price);
+            $this->request=stripslashes($this->request);
+            $this->status=stripslashes($this->status);
+            $this->created=stripslashes($this->created);
+        }
+}
