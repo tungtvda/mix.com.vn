@@ -12,24 +12,31 @@
                 <nav class="navigation awe-navigation" data-responsive="1200">
                     <ul class="menu-list">
                         <li class=" {trangchu_mn}"><a href="{SITE-NAME}">{trangchu}</a></li>
-                        <li class="menu-item-has-children {tour_mn}"><a href="{SITE-NAME}/tour/">{tour}</a>
-                            {danhmuc_menu}
-                        </li>
-                        <li class="menu-item-has-children {khachsan_mn}"><a href="{SITE-NAME}/khach-san/">{khachsan}</a>
+                        <li class="menu-item-has-children {tour_trong_nuoc_mn}"><a
+                                    href="{SITE-NAME}/tour/tour-du-lich-trong-nuoc/">Tour trong nước</a>
                             <ul class="sub-menu">
-                               {danhmuc_khachsan}
+                                {menu_tour_trongnuoc}
                             </ul>
                         </li>
-                        <li class="menu-item-has-children {tintuc_mn}"><a href="{SITE-NAME}/tin-tuc/">{tintuc}</a>
+                        <li class="menu-item-has-children {tour_nuoc_ngoai_mn}"><a
+                                    href="{SITE-NAME}/tour/tour-du-lich-quoc-te/">Tour nước ngoài</a>
+                            <ul class="sub-menu">
+                                {menu_tour_nuocngoai}
+                            </ul>
+
+                        </li>
+                        <li class=" {dichvu_mn}"><a href="{SITE-NAME}/dich-vu/">{lienhe}</a>
+                        </li>
+                        <li class="menu-item-has-children {tintuc_mn}"><a href="{SITE-NAME}/cam-nang/">{tintuc}</a>
                             <ul class="sub-menu">
                                 {danhmuc_tintuc}
                             </ul>
                         </li>
-                        <li class=""><a target="_blank" href="http://vemaybay.azbooking.vn/">Đặt vé máy bay</a>
+                        <li class=""><a target="_blank" href="{SITE-NAME}/tuyen-dung/">Tuyển dụng</a>
                         </li>
-                        <li class=" {lienhe_mn}"><a href="{SITE-NAME}/lien-he.html">{lienhe}</a>
-                        </li>
-                        <li class=" {lienhe_mn}"><a class="menu_mobi" href="tel:{Hotline}"><img style="width: 25px;" src="{SITE-NAME}/view/default/themes/images/tel-anphong2.gif"> {Hotline}</a>
+                        <li class=" {lienhe_mn}"><a class="menu_mobi" href="tel:{Hotline}"><img style="width: 25px;"
+                                                                                                src="{SITE-NAME}/view/default/themes/images/tel-anphong2.gif"> {Hotline}
+                            </a>
                         </li>
 
                     </ul>

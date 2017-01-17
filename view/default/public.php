@@ -204,6 +204,15 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
             {
                 $ft->assign('link',link_danhmuc_khachsan($item));
             }
+            if(get_class($item)=='danhmuc_2')
+            {
+                $name_url='';
+                $data_danhmuc_1=danhmuc_1_getById($item->danhmuc1_id);
+                if(count($data_danhmuc_1)>0){
+                    $name_url=$data_danhmuc_1[0]->name_url;
+                }
+                $ft->assign('link',link_dm_tour2($item, $name_url));
+            }
             if(get_class($item)=='khachsan')
             {
                 if($item->price==0||$item->price==''){

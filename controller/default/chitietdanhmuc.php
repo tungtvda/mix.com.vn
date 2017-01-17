@@ -15,7 +15,8 @@ require_once DIR . '/common/paging.php';
 require_once DIR . '/common/redict.php';
 $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
-
+$active='';
+$date_now=_returnGetDateTime();
 if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
     if(isset($_GET['Id'])&&$_GET['Id']!=''){
         $id=addslashes(strip_tags($_GET['Id']));
@@ -29,6 +30,11 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
         $danhmuc_1 = danhmuc_1_getByTop(1, 'id=' . $danhmuc2[0]->danhmuc1_id, '');
         if(count($danhmuc_1)>0)
         {
+            if($danhmuc_1[0]->id==2){
+                $active='tour_trong_nuoc';
+            }else{
+                $active='tour_nuoc_ngoai';
+            }
             $dk="DanhMuc2Id=".$danhmuc2[0]->id;
             $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
             $data['pagesize']=9;
@@ -45,6 +51,9 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
             $title=$danhmuc2[0]->title;
             $description=$danhmuc2[0]->description;
             $keyword=$danhmuc2[0]->keyword;
+            $data['tour_count_down']=tour_getByTop(9,'count_down!="" and count_down>"'.$date_now.'" and DanhMuc1Id='.$danhmuc_1[0]->id,'id desc');
+            $data['tour_PROMOTIONS']=tour_getByTop(9,'promotion=1 and DanhMuc1Id='.$danhmuc_1[0]->id,'id desc');
+            $data['tour_sales']=tour_getByTop(9,'price_sales!="" and DanhMuc1Id='.$danhmuc_1[0]->id,'id desc');
         }
         else{
             redict(SITE_NAME);
@@ -61,6 +70,11 @@ else{
         $danhmuc=danhmuc_1_getByTop(1,'name_url="'.$id.'"','');
         if(count($danhmuc)==0){
             redict(SITE_NAME);
+        }
+        if($danhmuc[0]->id==2){
+            $active='tour_trong_nuoc';
+        }else{
+            $active='tour_nuoc_ngoai';
         }
         $dk='DanhMuc1Id='.$danhmuc[0]->id;
 
@@ -79,6 +93,10 @@ else{
         $title=$danhmuc[0]->title;
         $description=$danhmuc[0]->description;
         $keyword=$danhmuc[0]->keyword;
+
+        $data['tour_count_down']=tour_getByTop(9,'count_down!="" and count_down>"'.$date_now.'" and DanhMuc1Id='.$danhmuc[0]->id,'id desc');
+        $data['tour_PROMOTIONS']=tour_getByTop(9,'promotion=1 and DanhMuc1Id='.$danhmuc[0]->id,'id desc');
+        $data['tour_sales']=tour_getByTop(9,'price_sales!="" and DanhMuc1Id='.$danhmuc[0]->id,'id desc');
     }
     else{
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
@@ -96,6 +114,10 @@ else{
         $title=$data['menu'][1]->title;
         $description=$data['menu'][1]->description;
         $keyword=$data['menu'][1]->keyword;
+
+        $data['tour_count_down']=tour_getByTop(9,'count_down!="" and count_down>"'.$date_now.'"','id desc');
+        $data['tour_PROMOTIONS']=tour_getByTop(9,'promotion=1 ','id desc');
+        $data['tour_sales']=tour_getByTop(9,'price_sales!="" ','id desc');
     }
 }
 $data['tab_tour_title']='active_tab_left';
@@ -105,16 +127,15 @@ $data['tab_tintuc_title']='';
 $data['tab_tour']='';
 $data['tab_khachsan']='hidden';
 $data['tab_tintuc']='hidden';
-$date_now=_returnGetDateTime();
-$data['tour_count_down']=tour_getByTop(9,'count_down!="" and count_down>"'.$date_now.'"','id desc');
-$data['tour_PROMOTIONS']=tour_getByTop(9,'promotion=1 ','id desc');
-$data['tour_sales']=tour_getByTop(9,'price_sales!="" ','id desc');
+
+
+
 
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';
 $keywords=($keyword)?$keyword:'Azbooking.vn';
 show_header($title,$description,$keywords,$data);
-show_menu($data,'tour');
+show_menu($data,$active);
 show_banner($data);
 show_danhmuc_tour($data);
 show_left_danhmuc($data);
