@@ -20,6 +20,8 @@ function view_menu($data = array())
     // active menu
     $asign['trangchu_mn'] = ($data['active'] == 'trangchu') ? 'current-menu-parent' : '';
     $asign['tour_mn'] = ($data['active'] == 'tour') ? 'current-menu-parent' : '';
+    $asign['tour_trong_nuoc_mn'] = ($data['active'] == 'tour_trong_nuoc') ? 'current-menu-parent' : '';
+    $asign['tour_nuoc_ngoai_mn'] = ($data['active'] == 'tour_nuoc_ngoai') ? 'current-menu-parent' : '';
     $asign['khachsan_mn'] = ($data['active'] == 'khachsan') ? 'current-menu-parent' : '';
     $asign['tintuc_mn'] = ($data['active'] == 'tintuc') ? 'current-menu-parent' : '';
     $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'current-menu-parent' : '';
@@ -54,5 +56,31 @@ function view_menu($data = array())
     {
         $asign['danhmuc_tintuc'] = print_item('menu_item', $data['danhmuc_tintuc']);
     }
+
+    $asign['danhmuc_tintuc'] ='';
+    if(count($data['danhmuc_tintuc'])>0)
+    {
+        $asign['danhmuc_tintuc'] = print_item('menu_item', $data['danhmuc_tintuc']);
+    }
+
+    $asign['danhmuc_tintuc'] ='';
+    if(count($data['danhmuc_tintuc'])>0)
+    {
+        $asign['danhmuc_tintuc'] = print_item('menu_item', $data['danhmuc_tintuc']);
+    }
+
+    $asign['menu_tour_trongnuoc'] ='';
+    if(count($data['menu_tour_trongnuoc'])>0)
+    {
+        $asign['menu_tour_trongnuoc'] = print_item('menu_item', $data['menu_tour_trongnuoc']);
+    }
+
+    $asign['menu_tour_nuocngoai'] ='';
+    if(count($data['menu_tour_nuocngoai'])>0)
+    {
+        $asign['menu_tour_nuocngoai'] = print_item('menu_item', $data['menu_tour_nuocngoai']);
+    }
+
+
     print_template($asign, 'menu');
 }
