@@ -73,6 +73,7 @@ function showTableBody($data)
 function showFrom($form,$ListKey=array())
 {
     $str_from='';
+    $str_from.='<p><label>tour_quoc_te</label><input  type="checkbox"  name="tour_quoc_te" value="1" '.(($form!=false)?(($form->tour_quoc_te=='1')?'checked':''):'').' /></p>';
     $str_from.='<p><label>Chọn danh mục cấp 1</label>';
     $str_from.='<select name="DanhMuc1Id" id="DanhMuc1Id">';
     if($form!=false)

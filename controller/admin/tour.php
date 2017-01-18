@@ -76,6 +76,8 @@ if(isset($_SESSION["Admin"]))
        $array=$_POST;
        if(!isset($array['id']))
        $array['id']='0';
+        if(!isset($array['tour_quoc_te']))
+            $array['tour_quoc_te']='0';
        if(!isset($array['DanhMuc1Id']))
        $array['DanhMuc1Id']='0';
        if(!isset($array['DanhMuc2Id']))

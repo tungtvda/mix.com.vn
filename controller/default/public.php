@@ -95,11 +95,15 @@ function show_menu($data1=array(),$active='trangchu')
     $data['config']=$data1['config'];
     $data['active']=$active;
     $data['menu']=$data1['menu'];
-    $data['danhmuc_menu']=danhmuc_1_getByTop('','id!=1','position asc');
+
     $data['danhmuc_khachsan']=danhmuc_khachsan_getByTop('','','position asc');
     $data['danhmuc_tintuc']=danhmuc_tintuc_getByTop('','','position asc');
-    $data['menu_tour_trongnuoc']=danhmuc_2_getByTop('','danhmuc1_id=2','position asc');
-    $data['menu_tour_nuocngoai']=danhmuc_2_getByTop('','danhmuc1_id=3','position asc');
+
+    $data['danhmuc_menu']=danhmuc_1_getByTop('','id!=1 and tour_quoc_te=0','position asc');
+    $data['danhmuc_menu_quocte']=danhmuc_1_getByTop('','id!=1 and tour_quoc_te=1','position asc');
+
+//    $data['menu_tour_trongnuoc']=danhmuc_2_getByTop('','danhmuc1_id=2','position asc');
+//    $data['menu_tour_nuocngoai']=danhmuc_2_getByTop('','danhmuc1_id=3','position asc');
     view_menu($data);
 }
 

@@ -46,6 +46,26 @@ function view_menu($data = array())
         $asign['danhmuc_menu'] .='</ul>';
     }
 
+    $asign['danhmuc_menu_quocte'] ='';
+    if(count($data['danhmuc_menu_quocte'])>0){
+        $asign['danhmuc_menu_quocte'] .='<ul class="sub-menu">';
+        foreach($data['danhmuc_menu_quocte'] as $row){
+            $link_dm1=link_dm_tour1($row);
+            $asign['danhmuc_menu_quocte'] .='<li class="menu-item-has-children"><a href="'.$link_dm1.'">'.$row->name.'</a>';
+            $data_danhmuc2=danhmuc_2_getByTop('','id!=1 and danhmuc1_id='.$row->id,'position asc');
+            if(count($data_danhmuc2)>0){
+                $asign['danhmuc_menu_quocte'] .='<ul class="sub-menu">';
+                foreach($data_danhmuc2 as $row2){
+                    $link_dm2=link_dm_tour2($row2,$row->name_url);
+                    $asign['danhmuc_menu_quocte'] .='<li><a href="'.$link_dm2.'">'.$row2->name.'</a></li>';
+                }
+                $asign['danhmuc_menu_quocte'] .='</ul>';
+            }
+            $asign['danhmuc_menu_quocte'] .='</li>';
+        }
+        $asign['danhmuc_menu_quocte'] .='</ul>';
+    }
+
     $asign['danhmuc_khachsan'] ='';
     if(count($data['danhmuc_khachsan'])>0)
     {
@@ -69,17 +89,17 @@ function view_menu($data = array())
         $asign['danhmuc_tintuc'] = print_item('menu_item', $data['danhmuc_tintuc']);
     }
 
-    $asign['menu_tour_trongnuoc'] ='';
-    if(count($data['menu_tour_trongnuoc'])>0)
-    {
-        $asign['menu_tour_trongnuoc'] = print_item('menu_item', $data['menu_tour_trongnuoc']);
-    }
-
-    $asign['menu_tour_nuocngoai'] ='';
-    if(count($data['menu_tour_nuocngoai'])>0)
-    {
-        $asign['menu_tour_nuocngoai'] = print_item('menu_item', $data['menu_tour_nuocngoai']);
-    }
+//    $asign['menu_tour_trongnuoc'] ='';
+//    if(count($data['menu_tour_trongnuoc'])>0)
+//    {
+//        $asign['menu_tour_trongnuoc'] = print_item('menu_item', $data['menu_tour_trongnuoc']);
+//    }
+//
+//    $asign['menu_tour_nuocngoai'] ='';
+//    if(count($data['menu_tour_nuocngoai'])>0)
+//    {
+//        $asign['menu_tour_nuocngoai'] = print_item('menu_item', $data['menu_tour_nuocngoai']);
+//    }
 
 
     print_template($asign, 'menu');

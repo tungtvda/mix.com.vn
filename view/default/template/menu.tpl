@@ -13,19 +13,26 @@
                     <ul class="menu-list">
                         <li class=" {trangchu_mn}"><a href="{SITE-NAME}">{trangchu}</a></li>
                         <li class="menu-item-has-children {tour_trong_nuoc_mn}"><a
-                                    href="{SITE-NAME}/tour/tour-du-lich-trong-nuoc/">Tour trong nước</a>
-                            <ul class="sub-menu">
-                                {menu_tour_trongnuoc}
-                            </ul>
+                                    href="{SITE-NAME}/tour-du-lich-trong-nuoc/">Tour trong nước</a>
+
+                                {danhmuc_menu}
+
                         </li>
                         <li class="menu-item-has-children {tour_nuoc_ngoai_mn}"><a
-                                    href="{SITE-NAME}/tour/tour-du-lich-quoc-te/">Tour nước ngoài</a>
-                            <ul class="sub-menu">
-                                {menu_tour_nuocngoai}
-                            </ul>
+                                    href="{SITE-NAME}/tour-du-lich-quoc-te/">Tour nước ngoài</a>
+
+                                {danhmuc_menu_quocte}
+
 
                         </li>
                         <li class=" {dichvu_mn}"><a href="{SITE-NAME}/dich-vu/">{lienhe}</a>
+                            <ul class="sub-menu">
+                                <li><a target="_blank" href="http://azbooking.vn/khach-san/">Khách sạn & Resort</a></li>
+                                <li><a href="{SITE-NAME}/dich-vu/visa-ho-chieuu.html"> Visa hộ chiếu</a></li>
+                                <li><a target="_blank" href="http://vemaybay.azbooking.vn/">Đặt vé máy bay</a></li>
+                                <li><a href="{SITE-NAME}/dich-vu/to-chuc-su-kien.html">Tổ chức sự kiện</a></li>
+                                <li><a href="{SITE-NAME}/dich-vu/thue-xe-du-lich.html">Thuê xe du lịch</a></li>
+                            </ul>
                         </li>
                         <li class="menu-item-has-children {tintuc_mn}"><a href="{SITE-NAME}/cam-nang/">{tintuc}</a>
                             <ul class="sub-menu">

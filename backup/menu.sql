@@ -9,3 +9,7 @@ update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm khách sạn',title='Tìm kiếm khách sạn',keyword='Tìm kiếm khách sạn',description='Tìm kiếm khách sạn' where id=7;
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm khách sạn',title='Tìm kiếm khách sạn',keyword='Tìm kiếm khách sạn',description='Tìm kiếm khách sạn' where id=8;
 update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tìm kiếm',title='Tìm kiếm',keyword='Tìm kiếm',description='Tìm kiếm' where id=9;
+update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Dịch vụ',title='Dịch vụ',keyword='Dịch vụ',description='Dịch vụ' where id=5;
+update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Cẩm nang',title='Cẩm nang',keyword='Cẩm nang',description='Cẩm nang' where id=4;
+update menu set img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tour du lịch trong nước',title='Tour du lịch trong nước',keyword='Tour du lịch trong nước',description='Tour du lịch trong nước' where id=2;
+update menu set img='/mix.com.vn/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',name='Tour du lịch quốc tế',title='Tour du lịch quốc tế',keyword='Tour du lịch quốc tế',description='Tour du lịch quốc tế' where id=10;
