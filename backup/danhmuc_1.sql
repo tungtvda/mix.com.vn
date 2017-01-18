@@ -11,3 +11,8 @@ update danhmuc_1 set name='Tour du lịch quốc tế',name_url='tour-du-lich-qu
 delete from danhmuc_1 where id=6;
 delete from danhmuc_1 where id=5;
 delete from danhmuc_1 where id=4;
+update danhmuc_1 set name='Tour du lịch quốc tế',tour_quoc_te='1',name_url='tour-du-lich-quoc-te',img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',position='2',title='Tour du lịch quốc tế',keyword='Tour du lịch quốc tế',description='Tour du lịch quốc tế' where id=3;
+insert into danhmuc_1 (tour_quoc_te,name,name_url,img,position,title,keyword,description) values ('1','test','test','','2','test','test','test');
+update danhmuc_1 set name='Tour du lịch trong ',tour_quoc_te='0',name_url='tour-du-lich-trong-',img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',position='1',title='Tour du lịch trong nước',keyword='Tour du lịch trong nước',description='Tour du lịch trong nước' where id=2;
+update danhmuc_1 set name='Tour du lịch trong f',tour_quoc_te='0',name_url='tour-du-lich-trong-f',img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',position='1',title='Tour du lịch trong nước',keyword='Tour du lịch trong nước',description='Tour du lịch trong nước' where id=2;
+update danhmuc_1 set name='test',tour_quoc_te='0',name_url='test',img='',position='2',title='test',keyword='test',description='test' where id=4;

@@ -1,10 +1,11 @@
 <?php
 class tour
 {
-    public $id,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
+    public $id,$tour_quoc_te,$DanhMuc1Id,$DanhMuc2Id,$promotion,$packages,$name,$name_url,$count_down,$code,$img,$price_sales,$price,$price_2,$price_3,$price_4,$price_5,$price_6,$durations,$departure,$departure_time,$destination,$vehicle,$hotel,$summary,$highlights,$schedule,$price_list,$content,$list_img,$title,$keyword,$description,$inclusion,$exclusion;
     public function tour($data=array())
     {
     $this->id=isset($data['id'])?$data['id']:'';
+        $this->tour_quoc_te = isset($data['tour_quoc_te']) ? $data['tour_quoc_te'] : '';
     $this->DanhMuc1Id=isset($data['DanhMuc1Id'])?$data['DanhMuc1Id']:'';
     $this->DanhMuc2Id=isset($data['DanhMuc2Id'])?$data['DanhMuc2Id']:'';
     $this->promotion=isset($data['promotion'])?$data['promotion']:'';
@@ -43,6 +44,7 @@ class tour
     public function encode()
         {
             $this->id=addslashes($this->id);
+            $this->tour_quoc_te = addslashes($this->tour_quoc_te);
             $this->DanhMuc1Id=addslashes($this->DanhMuc1Id);
             $this->DanhMuc2Id=addslashes($this->DanhMuc2Id);
             $this->promotion=addslashes($this->promotion);
@@ -80,6 +82,7 @@ class tour
     public function decode()
         {
             $this->id=stripslashes($this->id);
+            $this->tour_quoc_te = stripslashes($this->tour_quoc_te);
             $this->DanhMuc1Id=stripslashes($this->DanhMuc1Id);
             $this->DanhMuc2Id=stripslashes($this->DanhMuc2Id);
             $this->promotion=stripslashes($this->promotion);
