@@ -19,12 +19,13 @@ function view_menu($data = array())
 
     // active menu
     $asign['trangchu_mn'] = ($data['active'] == 'trangchu') ? 'current-menu-parent' : '';
-    $asign['tour_mn'] = ($data['active'] == 'tour') ? 'current-menu-parent' : '';
+//    $asign['tour_mn'] = ($data['active'] == 'tour') ? 'current-menu-parent' : '';
     $asign['tour_trong_nuoc_mn'] = ($data['active'] == 'tour_trong_nuoc') ? 'current-menu-parent' : '';
     $asign['tour_nuoc_ngoai_mn'] = ($data['active'] == 'tour_nuoc_ngoai') ? 'current-menu-parent' : '';
     $asign['khachsan_mn'] = ($data['active'] == 'khachsan') ? 'current-menu-parent' : '';
     $asign['tintuc_mn'] = ($data['active'] == 'tintuc') ? 'current-menu-parent' : '';
-    $asign['lienhe_mn'] = ($data['active'] == 'lienhe') ? 'current-menu-parent' : '';
+    $asign['dichvu_mn'] = ($data['active'] == 'dichvu') ? 'current-menu-parent' : '';
+    $asign['tuyendung_mn'] = ($data['active'] == 'tuyendung') ? 'current-menu-parent' : '';
 
     $asign['danhmuc_menu'] ='';
     if(count($data['danhmuc_menu'])>0){
@@ -66,11 +67,17 @@ function view_menu($data = array())
         $asign['danhmuc_menu_quocte'] .='</ul>';
     }
 
-    $asign['danhmuc_khachsan'] ='';
-    if(count($data['danhmuc_khachsan'])>0)
+//    $asign['danhmuc_khachsan'] ='';
+//    if(count($data['danhmuc_khachsan'])>0)
+//    {
+//        $asign['danhmuc_khachsan'] = print_item('menu_item', $data['danhmuc_khachsan']);
+//    }
+    $asign['danhmuc_dichvu'] ='';
+    if(count($data['danhmuc_dichvu'])>0)
     {
-        $asign['danhmuc_khachsan'] = print_item('menu_item', $data['danhmuc_khachsan']);
+        $asign['danhmuc_dichvu'] = print_item('menu_item', $data['danhmuc_dichvu']);
     }
+
     $asign['danhmuc_tintuc'] ='';
     if(count($data['danhmuc_tintuc'])>0)
     {

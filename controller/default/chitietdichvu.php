@@ -19,25 +19,19 @@ if(!isset($_GET['name_url'])){
     redict(SITE_NAME);
 }
 $id=addslashes(strip_tags($_GET['name_url']));
-$data['detail']=news_getByTop('1','name_url="'.$id.'"','');
+$data['detail']=dichvu_getByTop('1','name_url="'.$id.'"','');
 if(count($data['detail'])==0){
     redict(SITE_NAME);
 }
-$view=$data['detail'][0]->view;
-$view++;
-$view_update = new news();
-$view_update->id=$data['detail'][0]->id;
-$view_update->view=$view;
-news_update_view($view_update);
 $url='';
 $banner='';
 $link_detail='';
-$danhmuc_1 = danhmuc_tintuc_getById($data['detail'][0]->danhmuc_id);
+$danhmuc_1 = danhmuc_dichvu_getById($data['detail'][0]->danhmuc_id);
 if(count($danhmuc_1)>0)
 {
-    $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/cam-nang/">'.$data['menu'][2]->name.'</a></li><li><a href="'.SITE_NAME.'/cam-nang/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
+    $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/dich-vu/">'.$data['menu'][2]->name.'</a></li><li><a href="'.SITE_NAME.'/dich-vu/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
     $banner=$danhmuc_1[0]->img;
-    $link_detail=link_newsdetail($data['detail'][0],$danhmuc_1[0]->name_url,'');
+    $link_detail=link_dichvudetail($data['detail'][0],$danhmuc_1[0]->name_url,'');
 }
 else{
     redict(SITE_NAME);
@@ -52,7 +46,7 @@ $description=$data['detail'][0]->description;
 $keyword=$data['detail'][0]->keyword;
 $data['link_anh']=$data['detail'][0]->img;
 $data['link_url']=$link_detail;
-$data['tour_lienquan']=news_getByTop(6,'id!='.$data['detail'][0]->id.' and danhmuc_id='.$data['detail'][0]->danhmuc_id,'id desc');
+$data['tour_lienquan']=dichvu_getByTop(6,'id!='.$data['detail'][0]->id.' and danhmuc_id='.$data['detail'][0]->danhmuc_id,'id desc');
 
 $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';
@@ -67,8 +61,8 @@ $data['tab_khachsan']='hidden';
 $data['tab_tintuc']='';
 
 show_header($title,$description,$keywords,$data);
-show_menu($data,'tintuc');
+show_menu($data,'dichvu');
 show_banner($data);
-show_chitiet_tintuc($data);
+show_chitiet_dichvu($data);
 show_left_danhmuc($data);
 show_footer($data);

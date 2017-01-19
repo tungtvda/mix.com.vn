@@ -1,4 +1,4 @@
-<div class="item left col-md-6" style="visibility: visible; ">
+<div class="item left col-md-4 col-sm-6 col-xs-12" style="visibility: visible; ">
     <div class="Img">
         <img src="{img}" title="{name}" alt="{name}">
 

@@ -34,6 +34,8 @@ RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+
 RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&name_url=$2
 RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettour.php?Id=$1&Id_sub=$2&name_url=$3
 
+RewriteRule ^tour-gio-chot/$ controller/default/tourgiochot.php
+RewriteRule ^tour-gio-chot/page-([0-9]+)$ controller/default/tourgiochot.php?page=$1
 
 RewriteRule ^dat-tour/ajax/$ controller/default/booking.php
 
@@ -43,17 +45,27 @@ RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/$ controller/default/khachsan.php?Id=$1
 RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/khachsan.php?Id=$1&page=$2
 RewriteRule ^khach-san/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitietkhachsan.php?Id=$1&name_url=$2
 
-RewriteRule ^tin-tuc/$ controller/default/tintuc.php
-RewriteRule ^tin-tuc/page-([0-9]+)$ controller/default/tintuc.php?page=$1
-RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/$ controller/default/tintuc.php?Id=$1
-RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/tintuc.php?Id=$1&page=$2
-RewriteRule ^tin-tuc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettintuc.php?Id=$1&name_url=$2
+RewriteRule ^dich-vu/$ controller/default/dichvu.php
+RewriteRule ^dich-vu/page-([0-9]+)$ controller/default/dichvu.php?page=$1
+RewriteRule ^dich-vu/([a-zA-Z0-9_-]+)/$ controller/default/dichvu.php?Id=$1
+RewriteRule ^dich-vu/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/dichvu.php?Id=$1&page=$2
+RewriteRule ^dich-vu/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitietdichvu.php?Id=$1&name_url=$2
+
+RewriteRule ^tuyen-dung/$ controller/default/tuyendung.php
+RewriteRule ^tuyen-dung/page-([0-9]+)$ controller/default/tuyendung.php?page=$1
+RewriteRule ^tuyen-dung/([a-zA-Z0-9_-]+).html$ controller/default/chitiettuyendung.php?name_url=$1
+
+RewriteRule ^cam-nang/$ controller/default/tintuc.php
+RewriteRule ^cam-nang/page-([0-9]+)$ controller/default/tintuc.php?page=$1
+RewriteRule ^cam-nang/([a-zA-Z0-9_-]+)/$ controller/default/tintuc.php?Id=$1
+RewriteRule ^cam-nang/([a-zA-Z0-9_-]+)/page-([0-9]+)$ controller/default/tintuc.php?Id=$1&page=$2
+RewriteRule ^cam-nang/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ controller/default/chitiettintuc.php?Id=$1&name_url=$2
 
 
 
 RewriteRule ^tim-kiem-tour$ controller/default/timkiemtour.php
 RewriteRule ^tim-kiem-khach-san$ controller/default/timkiemkhachsan.php
-RewriteRule ^tim-kiem-tin-tuc$ controller/default/timkiemtintuc.php
+RewriteRule ^tim-kiem-cam-nang$ controller/default/timkiemtintuc.php
 RewriteRule ^tim-kiem/$ controller/default/timkiem.php
 
 RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1

@@ -28,10 +28,8 @@
                         <li class=" {dichvu_mn}"><a href="{SITE-NAME}/dich-vu/">{lienhe}</a>
                             <ul class="sub-menu">
                                 <li><a target="_blank" href="http://azbooking.vn/khach-san/">Khách sạn & Resort</a></li>
-                                <li><a href="{SITE-NAME}/dich-vu/visa-ho-chieuu.html"> Visa hộ chiếu</a></li>
                                 <li><a target="_blank" href="http://vemaybay.azbooking.vn/">Đặt vé máy bay</a></li>
-                                <li><a href="{SITE-NAME}/dich-vu/to-chuc-su-kien.html">Tổ chức sự kiện</a></li>
-                                <li><a href="{SITE-NAME}/dich-vu/thue-xe-du-lich.html">Thuê xe du lịch</a></li>
+                                {danhmuc_dichvu}
                             </ul>
                         </li>
                         <li class="menu-item-has-children {tintuc_mn}"><a href="{SITE-NAME}/cam-nang/">{tintuc}</a>
@@ -39,7 +37,7 @@
                                 {danhmuc_tintuc}
                             </ul>
                         </li>
-                        <li class=""><a target="_blank" href="{SITE-NAME}/tuyen-dung/">Tuyển dụng</a>
+                        <li class="{tuyendung_mn}"><a href="{SITE-NAME}/tuyen-dung/">Tuyển dụng</a>
                         </li>
                         <li class=" {lienhe_mn}"><a class="menu_mobi" href="tel:{Hotline}"><img style="width: 25px;"
                                                                                                 src="{SITE-NAME}/view/default/themes/images/tel-anphong2.gif"> {Hotline}

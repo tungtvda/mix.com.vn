@@ -10,7 +10,7 @@
         <div class="awe-search-tabs tabs">
             <ul>
                 <li><a title="Tìm kiếm tour" href="#awe-search-tabs-1"><i class="awe-icon awe-icon-briefcase"></i></a></li>
-                <li><a title="Tìm kiếm khách sạn" href="#awe-search-tabs-2"><i class="awe-icon awe-icon-hotel"></i></a></li>
+                <li><a id="search_khachsan" title="Tìm kiếm khách sạn" href="#awe-search-tabs-2"><i class="awe-icon awe-icon-hotel"></i></a></li>
                 <li><a title="Tìm kiếm tin tức" href="#awe-search-tabs-3"><i class="awe-icon fa fa-newspaper-o"></i></a></li>
                 <li><a id="search_maybay" title="Tìm kiếm vé máy bay" href="#awe-search-tabs-4"><i class="awe-icon awe-icon-plane"></i></a></li>
                 <!--<li><a href="#awe-search-tabs-5"><i class="awe-icon awe-icon-car"></i></a></li>
@@ -60,7 +60,7 @@
                         <div class="form-actions"><input type="submit" value="Tìm kiếm"></div>
                     </form>
                 </div>
-                <div id="awe-search-tabs-2" class="search-hotel"><h2>Tìm kiếm khách sạn</h2>
+                <!--<div hidden id="awe-search-tabs-2" class="search-hotel"><h2>Tìm kiếm khách sạn</h2>
                     <form action="{SITE-NAME}/tim-kiem-khach-san" method="get">
                         <div class="form-group" style="width: 31%">
                             <div class="form-elements">
@@ -104,9 +104,9 @@
 
                         <div class="form-actions" style="width: 10%"><input type="submit"  value="Tìm kiếm"></div>
                     </form>
-                </div>
-                <div id="awe-search-tabs-3" class="search-flight"><h2>Tìm kiếm tin tức</h2>
-                    <form action="{SITE-NAME}/tim-kiem-tin-tuc" method="get">
+                </div>-->
+                <div id="awe-search-tabs-3" class="search-flight"><h2>Tìm kiếm cẩm nang</h2>
+                    <form action="{SITE-NAME}/tim-kiem-cam-nang" method="get">
                         <div class="form-group" >
                             <div class="form-elements">
                                 <div class="form-item"><i class="awe-icon awe-icon-key"></i>
@@ -119,7 +119,6 @@
                                 <div class="form-item"><select name="danhmuc_id" class="awe-select">
                                         <option value="">Chọn danh mục</option>
                                         {danhmuc_tintuc_timkiem}
-
                                     </select></div>
                             </div>
 

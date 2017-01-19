@@ -23,6 +23,13 @@ $data['detail']=tour_getByTop('1','name_url="'.$id.'"','');
 if(count($data['detail'])==0){
     redict(SITE_NAME);
 }
+if($data['detail'][0]->tour_quoc_te==0){
+    $active='tour_trong_nuoc';
+    $link='/tour-du-lich-trong-nuoc/';
+}else{
+    $active='tour_nuoc_ngoai';
+    $link='/tour-du-lich-quoc-te/';
+}
 $url='';
 $banner='';
 $link_detail='';
@@ -38,7 +45,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
         $danhmuc_1 = danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
         if(count($danhmuc_1)>0)
         {
-            $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/tour/">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.'/tour/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><a href="'.SITE_NAME.'/tour/'.$danhmuc_1[0]->name_url.'/'.$danhmuc2[0]->name_url.'">'.$danhmuc2[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
+            $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.$link.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><a href="'.SITE_NAME.$link.$danhmuc_1[0]->name_url.'/'.$danhmuc2[0]->name_url.'">'.$danhmuc2[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
             $banner=$danhmuc2[0]->img;
             $link_detail=link_tourdetail($data['detail'][0],$danhmuc_1[0]->name_url,$danhmuc2[0]->name_url);
         }
@@ -55,7 +62,7 @@ else{
     $danhmuc_1 = danhmuc_1_getById($data['detail'][0]->DanhMuc1Id);
     if(count($danhmuc_1)>0)
     {
-        $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/tour/">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.'/tour/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
+        $url='<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.$link.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$data['detail'][0]->name.'</span></li>';
         $banner=$danhmuc_1[0]->img;
         $link_detail=link_tourdetail($data['detail'][0],$danhmuc_1[0]->name_url,'');
     }
@@ -68,6 +75,7 @@ $data['banner']=array(
     'name'=>$data['detail'][0]->name,
     'url'=>$url
 );
+
 $title=$data['detail'][0]->title;
 $description=$data['detail'][0]->description;
 $keyword=$data['detail'][0]->keyword;
@@ -79,7 +87,7 @@ $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';
 $keywords=($keyword)?$keyword:'Azbooking.vn';
 show_header($title,$description,$keywords,$data);
-show_menu($data,'tour');
+show_menu($data,$active);
 show_banner($data);
 show_chitiet_tour($data);
 show_footer($data);

@@ -1855,10 +1855,10 @@ span.dropcap {
 
 .awe-services__list li {
     position: relative;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    /*font-family: Tahoma, Arial, Helvetica, sans-serif !important;*/
+    font-weight: bold;
     font-size: 16px;
-    color: #666;
+    /*color: #666;*/
     padding: 24px 40px 24px 54px;
     border-bottom: 2px dotted #A1ADB9
 }
@@ -1907,7 +1907,7 @@ span.dropcap {
     display: block;
     font-weight: 400;
     font-size: 13px;
-    color: #ABABAB;
+    color: #666;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap
@@ -4893,7 +4893,8 @@ body.single-post .blog-page__content > .post .post-content {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    color: #222
+    color: #222;
+    font-weight: bold;
 }
 
 .flight-item .item-body .item-title h2 a:hover, .trip-item .item-body .item-title h2 a:hover, .attraction-item .item-body .item-title h2 a:hover, .hotel-item .item-body .item-title h2 a:hover {
@@ -10636,14 +10637,14 @@ body.single-post .blog-page__content > .post .post-content {
     color: #ffd501;
 }
 .search_left{
-    border: 2px solid #FF6666;
+    border: 2px solid #ed1c24;;
     border-radius: 3px 3px 3px 0;
     padding: 10px 20px;
 }
 .search_left .form-actions .add-to-cart button {
     font-size: 13px;
     color: #FCF2E5;
-    background-color: #FF6666;
+    background-color: #ed1c24;;
     border: 0;
     cursor: pointer;
     line-height: 46px;

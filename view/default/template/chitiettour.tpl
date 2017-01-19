@@ -133,7 +133,7 @@
                         <input id="price_5" value="{price_5}" hidden>
                         <input id="price_6" value="{price_6}" hidden>
 
-                        <p {hidden_date_select}>Thời gian khởi anh</p>
+                        <p {hidden_date_select}>Thời gian khởi hành</p>
                         <select {hidden_date_select} style="width: 100%;     padding: 0px;" id="date_select" name="date_select">
                             {date_select}
                         </select>
