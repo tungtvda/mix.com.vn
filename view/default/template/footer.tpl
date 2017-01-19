@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Azbooking.vn</a></p></div>
+        <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Mixtourist.com.vn</a></p></div>
     </div>
     <div hidden class="row-footer">
 
@@ -586,8 +586,10 @@
             }
         });
         $("#search_maybay").click(function () {
-
             window.open('http://vemaybay.azbooking.vn/', '_blank');
+        });
+        $("#search_khachsan").click(function () {
+            window.open('http://azbooking.vn/khach-san/', '_blank');
         });
     });
 

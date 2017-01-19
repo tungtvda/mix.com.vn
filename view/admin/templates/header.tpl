@@ -121,12 +121,19 @@
                         <li><a href="{SITE-NAME}/controller/admin/price_khachsan.php">Giá tìm kiếm khách sạn</a></li>
                     </ul>
                 </li>
-                <li class="dropdown {kichhoat_tintuc}"><a href="#"><span class=" icon-pencil"></span> Tin tức</a>
+                <li class="dropdown {kichhoat_tintuc}"><a href="#"><span class=" icon-pencil"></span> Cẩm nang</a>
                     <ul style="{kichhoat_tintuc_hienthi}">
                         <li><a href="{SITE-NAME}/controller/admin/danhmuc_tintuc.php">Danh mục</a></li>
                         <li><a href="{SITE-NAME}/controller/admin/news.php">Danh sách</a></li>
                     </ul>
                 </li>
+                <li class="dropdown {kichhoat_tintuc}"><a href="#"><span class=" icon-pencil"></span> Dịch vụ</a>
+                    <ul style="{kichhoat_tintuc_hienthi}">
+                        <li><a href="{SITE-NAME}/controller/admin/danhmuc_dichvu.php">Danh mục</a></li>
+                        <li><a href="{SITE-NAME}/controller/admin/dichvu.php">Danh sách</a></li>
+                    </ul>
+                </li>
+                <li class="{kichhoat_tag}"><a href="{SITE-NAME}/controller/admin/tuyendung.php"><span class="icon-pencil"></span> Tuyển dụng</a></li>
                 <li class="{kichhoat_tag}"><a href="{SITE-NAME}/controller/admin/tag.php"><span class="icon-pencil"></span> Tag</a></li>
                 <li class="{kichhoat_info}"><a href="{SITE-NAME}/controller/admin/info_mix.php"><span class="icon-tag"></span> Thông tin chính sách</a></li>
                 <li class="{kichhoat_hotro}"><a href="{SITE-NAME}/controller/admin/subport.php"><span class="icon-question-sign"></span> Hỗ trợ trực tuyến</a></li>

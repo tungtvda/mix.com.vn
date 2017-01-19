@@ -18,7 +18,7 @@ $data['tour_PROMOTIONS']=tour_getByTop(5,'promotion=1 ','id desc');
 $data['tour_sales']=tour_getByTop(5,'price_sales!="" ','id desc');
 $data['tintuc_index']=news_getByTop(5,'','id desc');
 $date_now=_returnGetDateTime();
-$data['tour_count_down']=tour_getByTop(2,'count_down!="" and count_down>"'.$date_now.'"','id desc');
+$data['tour_count_down']=tour_getByTop(3,'count_down!="" and count_down>"'.$date_now.'"','id desc');
 
 $data['khachsan_index']=khachsan_getByTop(9,'highlights=1 ','id desc');
 $data['video_index']=video_getByTop(1,'','id desc');

@@ -200,9 +200,31 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 }
                 $ft->assign('link',link_dichvu($item,$data_dm[0]->name_url));
             }
+            if(get_class($item)=='tuyendung')
+            {
+                $content=$item->content;
+                if (strlen($content) > 210) {
+                    $ten1=strip_tags($content);
+
+                    $ten = substr($ten1, 0, 210);
+                    $name = substr($ten, 0, strrpos($ten, ' ')) . "...";
+                    $ft->assign('content',$name);
+                } else {
+                    $ft->assign('content',strip_tags($content));
+                }
+                $ft->assign('link',link_tuyendung($item));
+            }
             if(get_class($item)=='danhmuc_khachsan')
             {
                 $ft->assign('link',link_danhmuc_khachsan($item));
+            }
+            if(get_class($item)=='danhmuc_dichvu')
+            {
+                $ft->assign('link',link_danhmuc_dichvu($item));
+            }
+            if(get_class($item)=='danhmuc_tintuc')
+            {
+                $ft->assign('link',link_news($item));
             }
             if(get_class($item)=='danhmuc_2')
             {
@@ -319,22 +341,28 @@ function link_dm_tour2($app, $name_url)
 }
 function link_tourdetail($app,$name_url='',$name2_url='')
 {
+    if($app->tour_quoc_te==0){
+
+        $link='/tour-du-lich-trong-nuoc/';
+    }else{
+        $link='/tour-du-lich-quoc-te/';
+    }
     if($name2_url==''){
-        return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'.html';
+        return SITE_NAME.$link.$name_url.'/'.$app->name_url.'.html';
     }
     else{
-        return SITE_NAME.'/tour/'.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html';
+        return SITE_NAME.$link.$name_url.'/'.$name2_url.'/'.$app->name_url.'.html';
     }
 
 }
 
 function link_news($app)
 {
-    return SITE_NAME.'/tin-tuc/'.$app->name_url.'/';
+    return SITE_NAME.'/cam-nang/'.$app->name_url.'/';
 }
 function link_newsdetail($app,$name_url='')
 {
-    return SITE_NAME.'/tin-tuc/'.$name_url.'/'.$app->name_url.'.html';
+    return SITE_NAME.'/cam-nang/'.$name_url.'/'.$app->name_url.'.html';
 }
 function link_khachsandetail($app,$name_url='')
 {
@@ -352,9 +380,19 @@ function link_danhmucdichvu($app)
 {
     return SITE_NAME.'/dich-vu/'.$app->name_url.'/';
 }
+function link_dichvudetail($app,$name_url='')
+{
+    return SITE_NAME.'/dich-vu/'.$name_url.'/'.$app->name_url.'.html';
+}
+function link_danhmuc_dichvu($app)
+{
+    return SITE_NAME.'/dich-vu/'.$app->name_url.'/';
+}
 
-
-
+function link_tuyendung($app)
+{
+    return SITE_NAME.'/tuyen-dung/'.$app->name_url.'.html';
+}
 
 
 

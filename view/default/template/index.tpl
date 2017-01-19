@@ -1,6 +1,6 @@
-<section {hidden_count_down} >
+<section {hidden_count_down} class="masonry-section-demo">
     <div class="container">
-        <div class=" col-sm-12 col-md-12 " style="padding: 0px">
+        <div class=" col-sm-12 col-md-12 destination-grid-content" style="padding: 0px">
             <h3 class="title_index">tour giờ chót</h3>
             <div class="" style="height: auto !important;">
                 <div class="tourGioChot">
@@ -14,21 +14,23 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
 </section>
 
-<section class="masonry-section-demo">
+<section  class="masonry-section-demo">
     <div class="container">
         <div class="destination-grid-content">
             <div class="section-title"></div>
-            <div class="">
+            <div hidden class="">
                 <h3 class="title_index">Khách sạn giảm giá</h3>
                 <div class="awe-masonry">
                     {khachsan_index}
                 </div>
             </div>
-            <div class="more-destination"><a href="{SITE-NAME}/khach-san/">Xem thêm</a></div>
+            <div class="more-destination"><a href="{SITE-NAME}/tour-gio-chot/">Xem thêm</a></div>
         </div>
     </div>
 </section>
@@ -75,7 +77,7 @@
                 <div class="mda-content">
                     <div class="mda-item-title-icon clearfix">
                         <div class="lb">
-                            VÌ SAO CHỌN AZBOOKING.VN ?
+                            VÌ SAO CHỌN MIXTOURIST.COM.VN ?
                         </div>
                     </div>
                     <div class="mda-why-box">

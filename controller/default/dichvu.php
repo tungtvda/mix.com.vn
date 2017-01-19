@@ -17,7 +17,7 @@ $data['menu']=menu_getByTop('','','');
 $data['config']=config_getByTop(1,'','');
     if(isset($_GET['Id'])&&$_GET['Id']!=''){
         $id=addslashes(strip_tags($_GET['Id']));
-        $danhmuc=danhmuc_tintuc_getByTop(1,'name_url="'.$id.'"','');
+        $danhmuc=danhmuc_dichvu_getByTop(1,'name_url="'.$id.'"','');
         if(count($danhmuc)==0){
             redict(SITE_NAME);
         }
@@ -25,14 +25,14 @@ $data['config']=config_getByTop(1,'','');
 
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
         $data['pagesize']=9;
-        $data['count']=news_count($dk);
-        $data['danhsach']=news_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
-        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/cam-nang/'.$danhmuc[0]->name_url.'/');
+        $data['count']=dichvu_count($dk);
+        $data['danhsach']=dichvu_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/dich-vu/'.$danhmuc[0]->name_url.'/');
         $name=$danhmuc[0]->name;
         $data['banner']=array(
             'banner_img'=>$danhmuc[0]->img,
             'name'=>$name,
-            'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/cam-nang/">'.$data['menu'][3]->name.'</a></li><li><span>'.$name.'</span></li>'
+            'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/dich-vu/">'.$data['menu'][3]->name.'</a></li><li><span>'.$name.'</span></li>'
         );
         $data['link_anh']=$danhmuc[0]->img;
         $title=$danhmuc[0]->title;
@@ -42,19 +42,19 @@ $data['config']=config_getByTop(1,'','');
     else{
         $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
         $data['pagesize']=9;
-        $data['count']=news_count('');
-        $data['danhsach']=news_getByPaging($data['current'],$data['pagesize'],'id desc','');
-        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/cam-nang/');
-        $name=$data['menu'][3]->name;
+        $data['count']=dichvu_count('');
+        $data['danhsach']=dichvu_getByPaging($data['current'],$data['pagesize'],'id desc','');
+        $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . '/dich-vu/');
+        $name=$data['menu'][10]->name;
         $data['banner']=array(
-            'banner_img'=>$data['menu'][3]->img,
+            'banner_img'=>$data['menu'][10]->img,
             'name'=>$name,
             'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><span>'.$name.'</span></li>'
         );
-        $data['link_anh']=$data['menu'][3]->img;
-        $title=$data['menu'][3]->title;
-        $description=$data['menu'][3]->description;
-        $keyword=$data['menu'][3]->keyword;
+        $data['link_anh']=$data['menu'][10]->img;
+        $title=$data['menu'][10]->title;
+        $description=$data['menu'][10]->description;
+        $keyword=$data['menu'][10]->keyword;
     }
 
 $data['tab_tour_title']='';
@@ -69,8 +69,8 @@ $title=($title)?$title:'Azbooking.vn';
 $description=($description)?$description:'Azbooking.vn';
 $keywords=($keyword)?$keyword:'Azbooking.vn';
 show_header($title,$description,$keywords,$data);
-show_menu($data,'tintuc');
+show_menu($data,'dichvu');
 show_banner($data);
-show_tintuc($data);
+show_dichvu($data);
 show_left_danhmuc($data);
 show_footer($data);
