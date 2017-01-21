@@ -23,7 +23,7 @@ function show_index($data = array())
     $asign['tour_sales'] ='';
     if(count($data['tour_sales'])>0)
     {
-        $asign['tour_sales'] = print_item('tour_index', $data['tour_sales']);
+        $asign['tour_sales'] = print_item('tour_sales', $data['tour_sales']);
     }
     $asign['tintuc_index'] ='';
     if(count($data['tintuc_index'])>0)

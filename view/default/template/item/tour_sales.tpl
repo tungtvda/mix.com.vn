@@ -18,12 +18,12 @@
                                     </span>
             <span class="Price">{price_format}</span>
         </div>
-        <div class="Discount"></div>
+        <!--<div class="Discount"></div>
         <div class="CountDown tour_count_down_index">
             <i class="fa fa-clock-o fa-2x"></i>&nbsp;&nbsp;
                                            <span data-time="{date_count}" class="kkcountdown-{key_id}">
                                                 <span class="kkcountdown-box">{mes_}</span>
                                            </span>
-        </div>
+        </div>-->
     </div>
 </div>

@@ -5619,3 +5619,208 @@ update tour set tour_quoc_te='1',DanhMuc1Id='3',DanhMuc2Id='7',promotion='1',pac
 <p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
 	After breakfast, you will be transferred to the airport for your departing flight. Thanks for traveling with Mixtourist. See you next trips.</p>
 ',list_img='',title='Central And South Of Laos',keyword='Central And South Of Laos',description='Central And South Of Laos',inclusion='',exclusion='' where id=9;
+update tour set tour_quoc_te='1',DanhMuc1Id='3',DanhMuc2Id='7',promotion='1',packages='0',name='Central And South Of Laosdfgd',name_url='central-and-south-of-laosdfgd',count_down='2017-01-15 10:10:00',code='CT02',img='/mix/view/admin/Themes/kcfinder/upload/images/tour/love-travel-27-780.jpg',price_sales='800000',price='700000',price_2='600',price_3='500',price_4='400',price_5='300',price_6='200',durations='10 Days 9 Nights',departure='1',departure_time='12-01-2017',destination='Kong Lor Cave',vehicle='Car',hotel='5',summary='<p>
+	jh</p>
+',highlights='<p>
+	ghj</p>
+',schedule='<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 1: VIENTIANE&nbsp; ARRIVAL - CITY TOUR</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	On arrival in Vientiane, you will be met and transferred to your hotel. If time permits, your half day city tour enables us to see the major temples of Vientiane including the oldest,&nbsp;<strong style=\"margin: 0px; padding: 0px;\"><a href=\"http://mixtourist.com/tour/with/Central-And-South-Of-Laos/271\" style=\"margin: 0px; padding: 0px; color: rgb(51, 51, 51); text-decoration: none;\" target=\"_blank\">Wat Sisaket</a>,</strong>&nbsp;a temple of thousands of miniature Buddha statues, and the former royal temple of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Wat Prakeo</strong>&nbsp;which previously housed the famous Emerald Buddha Image. We&#39;ll also visit Lao national icon,&nbsp;<strong style=\"margin: 0px; padding: 0px;\">That Luang Stupa</strong>.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Then we stop to take some pictures of the imposing Patuxay Monument which is Vientiane&#39;s own Arc de Triumph. Stay overnight in Vientiane</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 2: VIENTIANE - PRABAHT PONSA -KHOUN KHAM-BAN NAPHOUAK-SALA HIN BOUN</span></h2>
+<p>
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	You will be picked up from your Vientiane Hotel this morning, and travel south along route 13. En route we stop at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Prabaht Ponsan- an Manoluck LPQ stupa</strong>&nbsp;dating back to the 15th Century. It is also home to the Manoluck LPQ Budhhas footprint, was discovered in 1933, and now an is an important religious site in Laos.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Following the lunch, we continue onwards into Khammoune province and into the mountainous area where a stop at a view point near Khoun Kham offers a breathtaking view over the surrounding area. We eventually reach to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Ban Naphouak</strong>&nbsp;where we board a local boat on the Hin Boun River. The journey upstream takes us past some stunning limestone karst scenery as well as a number of villages with smiling waving children.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	In the late afternoon, we reach to your accommodation for the night at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Sala Hin Boun</strong>. You have the rest of the day at leisure. Stay overnight at Sala Hin Boun.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; color: rgb(255, 0, 0);\">Day 3: SALA HIN BOUN - KONG LOR CAVE&nbsp;</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	After breakfast at Sala Hin Boun, we continue by boat upriver to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Kong Lor village</strong>&nbsp;before boarding a smaller boat into the famous&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Kong Lor Cave</strong>. We navigate through the cave which is over 7km long and includes a spectacular cavern over 100m high.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We&#39;ll have lunch in a remote village on the other side of the cave. We return to Sala Hin Boun before sunset. Stay overnight at Sala Hin Boun.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; color: rgb(255, 0, 0);\">Day 4: SALA HIN BOUN - NAPHOUAK - THAKEK</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Following breakfast, we set off by road to Naphouak, before heading south by boat through some of the most spectacular gorges found in Southeast Asia.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Along the way, we make a stop for lunch and a picturesque&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Lao Loum village,</strong>&nbsp;and then we are picked up by car and transferred to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Thakek</strong>&nbsp;in the late afternoon.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Stay overnight in Thakek.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 5: THAKEK - BUDDHA CAVE&nbsp;</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We depart&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Thakek</strong>&nbsp;by Tuk-tuk, and follow the old French railway track that was destined for Vietnam but was never finished. Continuing through impressive scenery, you arrive at&nbsp; the village of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Ban Nakhang Xang</strong>&nbsp;and meet the village guides who will escort you on your trek. Passing through secondary forest, your guide will point out forest products that form an important part of local people&#39;s food resources. Going through a cave, you enter a striking valley with towering cliffs and forest. The trail follows the shoreline of<strong style=\"margin: 0px; padding: 0px;\">Nong Thao Lake</strong>&nbsp;where you can see local fishermen at work.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	On arrival at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tham Nong Paseum cave</strong>, more adventurous swimmers can explore the cave. The cave is 400 metres long and contains dramatic stalactites and stalagmites. Back in daylight.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	The trip continues onto&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Khammouane&#39;s</strong>&nbsp;famous Buddha cave for a traditional Lao lunch of Mekong fish, sticky rice and spicy papaya salad. After lunch, we visit&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tham Pa Fa</strong>&nbsp;or&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Buddha cave</strong>&nbsp;which was rediscovered in April 2004. The cave contains 229 bronze Buddhas that are said to be over 300 years old. If time permits, you will also be able to travel by local canoe into the water cave below.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Your guide will now escort you back to the village following a different route through the forest, and you will return to Thakek in the late afternoon. Stay overnight in Thakek.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 6: THAKEK - SAVANNAKHET - PAKSE</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	This morning, we are back on the road heading south to Thakek. En route we stop to visit the town of<strong style=\"margin: 0px; padding: 0px;\">Savannkhe</strong>t- is famous for its French Colonial buildings and also the sacred stupa of That Inhang. W in Pakse.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 7: PAKSE - BOLEVEAN PLATEAU - TAD FAN WATERFALL - TAD LO</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	This morning, you will be met and taken by road west into&nbsp;<strong style=\"margin: 0px; padding: 0px;\">the Bolevean Plateau</strong>. The Bolevean Plateau is known for its cooler temperature being located high above the Mekong Valley.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	The area is famous for its many waterfalls, and the most beautiful of these falls is&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tad Fan</strong>. Tad Fan waterfall is spectacular with twin waterfalls plummeting into a deep gorge surrounded by flourishing vegetation.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	A trip to the plateau provides a refreshing break from the heat and allows you to observe the cultivation of rich coffee, tea, cardamom, bananas, and other crops that can be seen en route. In the afternoon, we arrive at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tad Lo-</strong>&nbsp;home to another scenic waterfall and numerous ethnic minority groups. We visit the villages of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Alak, Nge, and Katu</strong>&nbsp;before staying overnight in Tad Lo.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 8: TAD LO - PHA SUAM WATERFALL - PAKSE - WAT PHOU - DON DAENG ISLANDS</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	After an early breakfast, we head out towards&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Khong Island</strong>. On the way, we make a short detour to visit<strong style=\"margin: 0px; padding: 0px;\">Pha Suam waterfall</strong>&nbsp;and to explore the ethnic minority villages of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Lao Teung</strong>.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We continue to travel by roading via&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Pakse town</strong>, and cross the Mekong by ferrying to visit the fascinating<strong style=\"margin: 0px; padding: 0px;\">Angkorian</strong>&nbsp;ruins of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Wat Phou</strong>- one of Southeast Asia&#39;s most dramatically situated temples. Following lunch, we continue our journey by car,&nbsp; and ferry to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Don Daeng Island</strong>. Stay overnight in Don Daeng.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 9: DON DAENG - LIPHI AND KHONE PHAPHENG WATERFALLS - 4000 ISLANDS&nbsp;</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Following breakfast, we enjoy a visit to the surrounding countryside, and embark on a long tail boat tour of the Don Khone area which takes you to visit the remains of the French period and&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Liphi Waterfall</strong>&nbsp;or &quot;<strong style=\"margin: 0px; padding: 0px;\">the Corridor of the Devil</strong>&quot;.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We return to the mainland at the fishing village of<strong style=\"margin: 0px; padding: 0px;\">&nbsp;Ban Nakasang</strong>&nbsp;and drive to the south to visit&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Khone Phapheng</strong>. Khone Phapheng is considered as the largest waterfall by volume in South East Asia. Setting within an area which is teeming with wildlife make this area one of the most breathtaking destinations in Laos. Stay overnight in&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Don Daeng.</strong></p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 10: DON DAENG - PAKSE DEPARTURE</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	After breakfast, you will be transferred to the airport for your departing flight. Thanks for traveling with Mixtourist. See you next trips.</p>
+',price_list='<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: center; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; color: rgb(255, 0, 0);\"><strong style=\"margin: 0px; padding: 0px;\">PACKAGE TOUR:</strong><strong style=\"margin: 0px; padding: 0px;\">&nbsp;Contact us</strong></span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<h3 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; color: rgb(255, 0, 0);\">TOUR INCLUDED:</span></h3>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<ul style=\"margin: 0px; padding-right: 0px; padding-left: 0px; list-style: none; color: rgb(60, 59, 59); font-family: Arial; text-align: justify;\">
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		09 Nights Accommodation with breakfast.</li>
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		Pick-ups and transfers by private air-conditioned vehicle as specified in the itinerary above.</li>
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		Boat cruises as specified in the program.</li>
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		The services of experienced English-speaking guides as indicated in the itinerary.</li>
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		Enchange fees for all visits as mentioned in the program.</li>
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		Meals (as specified in the itinerary) in the best local restaurants, or picnics where no suitable restaurant is available.</li>
+	<li 6px=\"\" azbooking.vn=\"\" http:=\"\" images=\"\" left=\"\" no-repeat=\"\" scroll=\"\" style=\"margin: 0px; padding: 0px 0px 0px 11px; list-style: none outside none; background: url(\">
+		&nbsp;</li>
+</ul>
+',content='<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 1: VIENTIANE&nbsp; ARRIVAL - CITY TOUR</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	On arrival in Vientiane, you will be met and transferred to your hotel. If time permits, your half day city tour enables us to see the major temples of Vientiane including the oldest,&nbsp;<strong style=\"margin: 0px; padding: 0px;\"><a href=\"http://mixtourist.com/tour/with/Central-And-South-Of-Laos/271\" style=\"margin: 0px; padding: 0px; color: rgb(51, 51, 51); text-decoration: none;\" target=\"_blank\">Wat Sisaket</a>,</strong>&nbsp;a temple of thousands of miniature Buddha statues, and the former royal temple of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Wat Prakeo</strong>&nbsp;which previously housed the famous Emerald Buddha Image. We&#39;ll also visit Lao national icon,&nbsp;<strong style=\"margin: 0px; padding: 0px;\">That Luang Stupa</strong>.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Then we stop to take some pictures of the imposing Patuxay Monument which is Vientiane&#39;s own Arc de Triumph. Stay overnight in Vientiane</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 2: VIENTIANE - PRABAHT PONSA -KHOUN KHAM-BAN NAPHOUAK-SALA HIN BOUN</span></h2>
+<p>
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	You will be picked up from your Vientiane Hotel this morning, and travel south along route 13. En route we stop at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Prabaht Ponsan- an Manoluck LPQ stupa</strong>&nbsp;dating back to the 15th Century. It is also home to the Manoluck LPQ Budhhas footprint, was discovered in 1933, and now an is an important religious site in Laos.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Following the lunch, we continue onwards into Khammoune province and into the mountainous area where a stop at a view point near Khoun Kham offers a breathtaking view over the surrounding area. We eventually reach to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Ban Naphouak</strong>&nbsp;where we board a local boat on the Hin Boun River. The journey upstream takes us past some stunning limestone karst scenery as well as a number of villages with smiling waving children.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	In the late afternoon, we reach to your accommodation for the night at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Sala Hin Boun</strong>. You have the rest of the day at leisure. Stay overnight at Sala Hin Boun.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; color: rgb(255, 0, 0);\">Day 3: SALA HIN BOUN - KONG LOR CAVE&nbsp;</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	After breakfast at Sala Hin Boun, we continue by boat upriver to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Kong Lor village</strong>&nbsp;before boarding a smaller boat into the famous&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Kong Lor Cave</strong>. We navigate through the cave which is over 7km long and includes a spectacular cavern over 100m high.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We&#39;ll have lunch in a remote village on the other side of the cave. We return to Sala Hin Boun before sunset. Stay overnight at Sala Hin Boun.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; color: rgb(255, 0, 0);\">Day 4: SALA HIN BOUN - NAPHOUAK - THAKEK</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Following breakfast, we set off by road to Naphouak, before heading south by boat through some of the most spectacular gorges found in Southeast Asia.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Along the way, we make a stop for lunch and a picturesque&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Lao Loum village,</strong>&nbsp;and then we are picked up by car and transferred to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Thakek</strong>&nbsp;in the late afternoon.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Stay overnight in Thakek.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 5: THAKEK - BUDDHA CAVE&nbsp;</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We depart&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Thakek</strong>&nbsp;by Tuk-tuk, and follow the old French railway track that was destined for Vietnam but was never finished. Continuing through impressive scenery, you arrive at&nbsp; the village of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Ban Nakhang Xang</strong>&nbsp;and meet the village guides who will escort you on your trek. Passing through secondary forest, your guide will point out forest products that form an important part of local people&#39;s food resources. Going through a cave, you enter a striking valley with towering cliffs and forest. The trail follows the shoreline of<strong style=\"margin: 0px; padding: 0px;\">Nong Thao Lake</strong>&nbsp;where you can see local fishermen at work.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	On arrival at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tham Nong Paseum cave</strong>, more adventurous swimmers can explore the cave. The cave is 400 metres long and contains dramatic stalactites and stalagmites. Back in daylight.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	The trip continues onto&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Khammouane&#39;s</strong>&nbsp;famous Buddha cave for a traditional Lao lunch of Mekong fish, sticky rice and spicy papaya salad. After lunch, we visit&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tham Pa Fa</strong>&nbsp;or&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Buddha cave</strong>&nbsp;which was rediscovered in April 2004. The cave contains 229 bronze Buddhas that are said to be over 300 years old. If time permits, you will also be able to travel by local canoe into the water cave below.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Your guide will now escort you back to the village following a different route through the forest, and you will return to Thakek in the late afternoon. Stay overnight in Thakek.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 6: THAKEK - SAVANNAKHET - PAKSE</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	This morning, we are back on the road heading south to Thakek. En route we stop to visit the town of<strong style=\"margin: 0px; padding: 0px;\">Savannkhe</strong>t- is famous for its French Colonial buildings and also the sacred stupa of That Inhang. W in Pakse.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 7: PAKSE - BOLEVEAN PLATEAU - TAD FAN WATERFALL - TAD LO</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	This morning, you will be met and taken by road west into&nbsp;<strong style=\"margin: 0px; padding: 0px;\">the Bolevean Plateau</strong>. The Bolevean Plateau is known for its cooler temperature being located high above the Mekong Valley.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	The area is famous for its many waterfalls, and the most beautiful of these falls is&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tad Fan</strong>. Tad Fan waterfall is spectacular with twin waterfalls plummeting into a deep gorge surrounded by flourishing vegetation.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	A trip to the plateau provides a refreshing break from the heat and allows you to observe the cultivation of rich coffee, tea, cardamom, bananas, and other crops that can be seen en route. In the afternoon, we arrive at&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Tad Lo-</strong>&nbsp;home to another scenic waterfall and numerous ethnic minority groups. We visit the villages of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Alak, Nge, and Katu</strong>&nbsp;before staying overnight in Tad Lo.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 8: TAD LO - PHA SUAM WATERFALL - PAKSE - WAT PHOU - DON DAENG ISLANDS</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	After an early breakfast, we head out towards&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Khong Island</strong>. On the way, we make a short detour to visit<strong style=\"margin: 0px; padding: 0px;\">Pha Suam waterfall</strong>&nbsp;and to explore the ethnic minority villages of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Lao Teung</strong>.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We continue to travel by roading via&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Pakse town</strong>, and cross the Mekong by ferrying to visit the fascinating<strong style=\"margin: 0px; padding: 0px;\">Angkorian</strong>&nbsp;ruins of&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Wat Phou</strong>- one of Southeast Asia&#39;s most dramatically situated temples. Following lunch, we continue our journey by car,&nbsp; and ferry to&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Don Daeng Island</strong>. Stay overnight in Don Daeng.</p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 9: DON DAENG - LIPHI AND KHONE PHAPHENG WATERFALLS - 4000 ISLANDS&nbsp;</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	Following breakfast, we enjoy a visit to the surrounding countryside, and embark on a long tail boat tour of the Don Khone area which takes you to visit the remains of the French period and&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Liphi Waterfall</strong>&nbsp;or &quot;<strong style=\"margin: 0px; padding: 0px;\">the Corridor of the Devil</strong>&quot;.</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	We return to the mainland at the fishing village of<strong style=\"margin: 0px; padding: 0px;\">&nbsp;Ban Nakasang</strong>&nbsp;and drive to the south to visit&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Khone Phapheng</strong>. Khone Phapheng is considered as the largest waterfall by volume in South East Asia. Setting within an area which is teeming with wildlife make this area one of the most breathtaking destinations in Laos. Stay overnight in&nbsp;<strong style=\"margin: 0px; padding: 0px;\">Don Daeng.</strong></p>
+<h2 style=\"margin: 0px; padding: 0px; font-stretch: normal; line-height: normal; font-family: Arial; background-image: none; background-position: 0px 0px; background-size: initial; background-repeat: repeat; background-attachment: scroll; background-origin: initial; background-clip: initial; color: rgb(0, 0, 0); text-align: justify; font-size: 17px !important;\">
+	<span style=\"margin: 0px; padding: 0px; font-size: small; color: rgb(255, 0, 0);\">Day 10: DON DAENG - PAKSE DEPARTURE</span></h2>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	&nbsp;</p>
+<p style=\"margin: 0px; padding: 0px; font-size: 11pt; line-height: 21px; text-align: justify; color: rgb(60, 59, 59); font-family: Arial;\">
+	After breakfast, you will be transferred to the airport for your departing flight. Thanks for traveling with Mixtourist. See you next trips.</p>
+',list_img='',title='Central And South Of Laos',keyword='Central And South Of Laos',description='Central And South Of Laos',inclusion='',exclusion='' where id=9;

@@ -12,5 +12,9 @@ function view_banner($data=array())
     $asign['name_dm']=$data['banner']['name'];
     $asign['banner_img']=$data['banner']['banner_img'];
     $asign['url']=$data['banner']['url'];
+    $asign['content_short']='';
+    if(isset($data['banner']['content_short'])){
+        $asign['content_short']=$data['banner']['content_short'];
+    }
     print_template($asign,'banner');
 }

@@ -10,6 +10,10 @@
                                 {url}
                             </ul>
                         </div>
+                        <div>
+                            {content_short}
+                            </div>
+
                     </div>
                 </div>
             </div>

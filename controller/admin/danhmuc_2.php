@@ -62,7 +62,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/danhmuc_2.php');
         }
     }
-    if(isset($_POST["danhmuc1_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["img"])&&isset($_POST["position"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
+    if(isset($_POST["danhmuc1_id"])&&isset($_POST["name"])&&isset($_POST["name_url"])&&isset($_POST["content_short"])&&isset($_POST["img"])&&isset($_POST["position"])&&isset($_POST["title"])&&isset($_POST["keyword"])&&isset($_POST["description"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -76,6 +76,8 @@ if(isset($_SESSION["Admin"]))
         $array['name_url']=LocDau($array['name']);
        if(!isset($array['img']))
        $array['img']='0';
+        if(!isset($array['content_short']))
+            $array['content_short']='0';
        if(!isset($array['position']))
        $array['position']='0';
        if(!isset($array['title']))
