@@ -11098,12 +11098,13 @@ caption, th, td {
     margin-bottom: 40px;
 }
 #mda-why .mda-why-box  p {
-    color: #7f3939;
     margin-top: 10px;
     /* text-shadow: 0.1em 0.1em #fff; */
     font-size: 16px;
-    color: #7f3939;
-    text-shadow: white 0.1em 0.1em 0.2em;
+    color: #8c0404;
+    /*text-shadow: white 0.1em 0.1em 0.2em;*/
+    font-weight: bold;
+
 }
 .package-location{
     padding-bottom: 20px;
@@ -11116,7 +11117,7 @@ caption, th, td {
     margin-bottom: 30px;
 }
 .backgroup_tieuchi{
-    background-image: url(../images/du-lich-gia-re.jpg) !important;
+    background-image: url(../images/vi-sao-chon-mixtourist.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -11237,4 +11238,8 @@ padding: 10px 0px;
 }
 .body_map{
 
+}
+.item-price-more a:hover{
+    border: 1px solid #ff0909 !important;
+    background-color: #ff0909 !important;
 }
