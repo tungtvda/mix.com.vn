@@ -37,6 +37,12 @@ RewriteRule ^tour-du-lich-quoc-te/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_
 RewriteRule ^tour-gio-chot/$ controller/default/tourgiochot.php
 RewriteRule ^tour-gio-chot/page-([0-9]+)$ controller/default/tourgiochot.php?page=$1
 
+RewriteRule ^tour-giam-gia/$ controller/default/tourgiamgia.php
+RewriteRule ^tour-giam-gia/page-([0-9]+)$ controller/default/tourgiamgia.php?page=$1
+
+RewriteRule ^tour-noi-bat/$ controller/default/tournoibat.php
+RewriteRule ^tour-noi-bat/page-([0-9]+)$ controller/default/tournoibat.php?page=$1
+
 RewriteRule ^dat-tour/ajax/$ controller/default/booking.php
 
 RewriteRule ^khach-san/$ controller/default/khachsan.php

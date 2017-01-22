@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Mixtourist.com.vn</a></p></div>
+        <div class="copyright"><p>©2016 . <a href="{SITE-NAME}">Mixtourist.com.vn</a> Đã đăng ký Bộ Công Thương. Mã số thuế 0105801085. Số giấy phép: 01-728/2015/ TCDL - GPLHQT</p></div>
     </div>
     <div hidden class="row-footer">
 

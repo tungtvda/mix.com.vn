@@ -1963,7 +1963,7 @@ span.dropcap {
     -o-border-radius: 4px;
     border-radius: 4px;
     overflow: hidden;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     background-position: 50% 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10981,6 +10981,7 @@ caption, th, td {
 .tourGioChot .item img {
     width: 100%;
     border: 1px solid #fff;
+    height: 250px;
 }
 .tourGioChot .item .Img .Name {
     position: absolute;
@@ -11061,7 +11062,7 @@ caption, th, td {
 #mda-why {
     /*background-color: #e7e7e7;*/
     /*margin-top: 30px;*/
-    padding: 50px 0;
+    padding: 10px 0;
 }
 #mda-why .mda-content {
     text-align: center;
@@ -11097,8 +11098,13 @@ caption, th, td {
     margin-bottom: 40px;
 }
 #mda-why .mda-why-box  p {
-    color: #FFFFFF;
     margin-top: 10px;
+    /* text-shadow: 0.1em 0.1em #fff; */
+    font-size: 16px;
+    color: #8c0404;
+    /*text-shadow: white 0.1em 0.1em 0.2em;*/
+    font-weight: bold;
+
 }
 .package-location{
     padding-bottom: 20px;
@@ -11111,7 +11117,7 @@ caption, th, td {
     margin-bottom: 30px;
 }
 .backgroup_tieuchi{
-    background-image: url(../images/Layer-85.png) !important;
+    background-image: url(../images/vi-sao-chon-mixtourist.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -11232,4 +11238,8 @@ padding: 10px 0px;
 }
 .body_map{
 
+}
+.item-price-more a:hover{
+    border: 1px solid #ff0909 !important;
+    background-color: #ff0909 !important;
 }

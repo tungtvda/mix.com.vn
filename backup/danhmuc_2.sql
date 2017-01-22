@@ -28,3 +28,6 @@ delete from danhmuc_2 where id=17;
 delete from danhmuc_2 where id=18;
 delete from danhmuc_2 where id=19;
 delete from danhmuc_2 where id=20;
+update danhmuc_2 set danhmuc1_id='3',name='Châu Úc',name_url='chau-ec',img='/azbooking/view/admin/Themes/kcfinder/upload/images/danhmuc_tour/848166.jpg',position='5', content_short='<p>
+	Ch&acirc;u &Uacute;c nooij dung&nbsp;</p>
+',title='Châu Úc',keyword='Châu Úc',description='Châu Úc' where id=10;

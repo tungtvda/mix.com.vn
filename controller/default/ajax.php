@@ -20,6 +20,6 @@ if(count($districts1)>0)
     }
 }
 else{
-    $str .= '<option value="1">Chọn danh mục cấp 2</option>';
+    $str .= '<option value="1">Chọn điểm đến</option>';
 }
 echo $str;
