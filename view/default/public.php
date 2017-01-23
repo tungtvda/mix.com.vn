@@ -333,11 +333,23 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
 }
 function link_dm_tour1($app)
 {
-    return SITE_NAME.'/tour/'.$app->name_url.'/';
+    if($app->tour_quoc_te==0){
+
+        $link='/tour-du-lich-trong-nuoc/';
+    }else{
+        $link='/tour-du-lich-quoc-te/';
+    }
+    return SITE_NAME.$link.$app->name_url.'/';
 }
-function link_dm_tour2($app, $name_url)
+function link_dm_tour2($app, $name_url, $tour_quoc_te=0)
 {
-    return SITE_NAME.'/tour/'.$name_url.'/'.$app->name_url.'/';
+    if($tour_quoc_te==0){
+
+        $link='/tour-du-lich-trong-nuoc/';
+    }else{
+        $link='/tour-du-lich-quoc-te/';
+    }
+    return SITE_NAME.$link.$name_url.'/'.$app->name_url.'/';
 }
 function link_tourdetail($app,$name_url='',$name2_url='')
 {

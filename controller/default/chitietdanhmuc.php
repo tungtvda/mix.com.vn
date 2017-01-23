@@ -30,6 +30,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
         $danhmuc_1 = danhmuc_1_getByTop(1, 'id=' . $danhmuc2[0]->danhmuc1_id, '');
         if(count($danhmuc_1)>0)
         {
+            $current=isset($_GET['page'])?$_GET['page']:'1';
             if($danhmuc_1[0]->tour_quoc_te==0){
                 $active='tour_trong_nuoc';
                 $link='/tour-du-lich-trong-nuoc/';
@@ -37,11 +38,38 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
                 $active='tour_nuoc_ngoai';
                 $link='/tour-du-lich-quoc-te/';
             }
-            $dk="DanhMuc2Id=".$danhmuc2[0]->id;
-            $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
-            $data['pagesize']=9;
-            $data['count']=tour_count($dk);
-            $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+//            $dk="DanhMuc2Id=".$danhmuc2[0]->id;
+//            $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
+//            $data['pagesize']=9;
+//            $data['count']=tour_count($dk);
+//            $data['danhsach']=tour_getByPaging($data['current'],$data['pagesize'],'id desc',$dk);
+            $pagesize=9;
+            $arr_push=array();
+            $data_all=tour_getByTop('','','id desc');
+
+            foreach($data_all as $row){
+                $arr_check=explode(',',$row->danhmuc_multi);
+                if($row->DanhMuc2Id==$danhmuc2[0]->id||in_array($danhmuc2[0]->id,$arr_check)){
+                    array_push($arr_push,$row);
+                }
+            }
+            $start=($current-1)*$pagesize;
+            $data['count']=count($arr_push);
+            $arr_push_rest=array();
+            $dem=1;
+            for($i=$start; $i<=$data['count'];$i++){
+                if(isset($arr_push[$i])&&$dem<=$pagesize){
+                    array_push($arr_push_rest,$arr_push[$i]);
+                }
+                $dem++;
+            }
+            $data['current']=$current;
+            $data['pagesize']=$pagesize;
+            $data['danhsach']=$arr_push_rest;
+//            print_r($arr_push_rest);
+//            exit;
+
+
             $data['PAGING'] = showPagingAtLink($data['count'], $data['pagesize'], $data['current'], '' . SITE_NAME . $link.$danhmuc_1[0]->name_url.'/'.$danhmuc2[0]->name_url.'/');
             $name=$danhmuc2[0]->name;
             $data['banner']=array(

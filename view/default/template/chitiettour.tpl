@@ -63,25 +63,25 @@
                         </div>
                     </div>
                     <div class="package-details-content" style="float: left; width: 100%">
-                        <h3 class="title">Tóm tắt</h3>
+                        <h3 {hidden_summary} class="title">Tóm tắt</h3>
                         <p>{summary}
                         </p>
 
-                        <h3 class="title">Nổi bật</h3>
+                        <h3 {hidden_summary} class="title">Nổi bật</h3>
                         <p>{highlights}
                         </p>
+                        {quocgia}
                     </div>
                 </div>
                 <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
     overflow: hidden;
-    padding-bottom: 35px;
-    margin-bottom: 35px;">
+    padding-bottom: 20px;">
 
                     <ul>
                         <li><a href="#tabs-1">Lịch trình</a></li>
-                        <li><a href="#tabs-2">Bao gồm</a></li>
-                        <li><a href="#tabs-3">Không bao gồm</a></li>
-                        <li><a href="#tabs-4">Bảng giá</a></li>
+                        <li hidden><a href="#tabs-2">Bao gồm</a></li>
+                        <li hidden><a href="#tabs-3">Không bao gồm</a></li>
+                        <li hidden><a href="#tabs-4">Bảng giá</a></li>
                     </ul>
                     <div class="product-tabs__content">
                         <div id="tabs-1">
@@ -104,6 +104,53 @@
                                 {price_list}
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;">
+
+                    <ul>
+                        <li><a href="#tabs-1">Bảng giá</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                {price_list}
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div {hidden_inclusion} class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;">
+                    <ul>
+                        <li><a href="#tabs-1">Bao gồm</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                {inclusion}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div {hidden_exclusion} class="product-tabs tabs col-md-12" style="border-bottom: 1px solid #D4D4D4;
+    overflow: hidden;
+    padding-bottom: 20px;;">
+                    <ul>
+                        <li><a href="#tabs-1">Không bao gồm</a></li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div id="tabs-1">
+                            <div class="initiative">
+                                {exclusion}
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div  class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>

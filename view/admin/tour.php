@@ -116,25 +116,38 @@ function showFrom($form,$ListKey=array())
         $str_from .= '<option value="1">Chọn danh mục cấp 2</option>';
     }
     $str_from.='</select></p>';
-    $str_from.='<p><label>danhmuc_multi</label>';
+    $str_from.='<p><label>Danh sách quốc gia</label>';
     $arr_check=array();
     if($form!=false){
         $arr_check=explode(',',$form->danhmuc_multi);
     }
     $array_check_cate=array();
+    $dem_check=0;
     foreach($ListKey['DanhMuc2Id'] as $key)
     {
-
         $checked='';
         if(in_array($key->id,$arr_check)){
             $checked='checked';
         }
+
         if(!in_array($key->danhmuc1_id,$array_check_cate)){
-            $str_from.="</br></br>";
+
+            if($dem_check!=0)
+            {
+                $str_from.="</br></br>";
+            }
+            $data_dm1=danhmuc_1_getById($key->danhmuc1_id);
+            if(count($data_dm1)>0){
+                $str_from.="<a class='show_radio' href='javascript:void(0)'><b>".$data_dm1[0]->name."</b></a></br>";
+            }
             array_push($array_check_cate,$key->danhmuc1_id);
         }
-        $str_from.=$key->name.' <input style="margin-top: -4px;" '.$checked.'  class="text-input small-input" type="checkbox"  name="danhmuc_multi[]" value="'.$key->id.'" /> --- ';
+        $str_from.=$key->name.' <input style="margin-top: -4px;" '.$checked.'  class="text-input small-input show_'.$key->danhmuc1_id.'" type="checkbox"  name="danhmuc_multi[]" value="'.$key->id.'" /> --- ';
+
+        $dem_check++;
+
     }
+
     $str_from.='</p>';
     $str_from.='<p><label>promotion</label><input  type="checkbox"  name="promotion" value="1" '.(($form!=false)?(($form->promotion=='1')?'checked':''):'').' /></p>';
     $str_from.='<p><label>packages</label><input  type="checkbox"  name="packages" value="1" '.(($form!=false)?(($form->packages=='1')?'checked':''):'').' /></p>';
@@ -145,11 +158,11 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>img</label><input class="text-input small-input" type="text"  name="img" value="'.(($form!=false)?$form->img:'').'"/><a class="button" onclick="openKcEditor(\'img\');">Upload ảnh</a></p>';
     $str_from.='<p><label>price_sales</label><input class="text-input small-input" type="text"  name="price_sales" value="'.(($form!=false)?$form->price_sales:'').'" /></p>';
     $str_from.='<p><label>price</label><input class="text-input small-input" type="text"  name="price" value="'.(($form!=false)?$form->price:'').'" /></p>';
-    $str_from.='<p><label>price_2</label><input class="text-input small-input" type="text"  name="price_2" value="'.(($form!=false)?$form->price_2:'').'" /></p>';
-    $str_from.='<p><label>price_3</label><input class="text-input small-input" type="text"  name="price_3" value="'.(($form!=false)?$form->price_3:'').'" /></p>';
-    $str_from.='<p><label>price_4</label><input class="text-input small-input" type="text"  name="price_4" value="'.(($form!=false)?$form->price_4:'').'" /></p>';
-    $str_from.='<p><label>price_5</label><input class="text-input small-input" type="text"  name="price_5" value="'.(($form!=false)?$form->price_5:'').'" /></p>';
-    $str_from.='<p><label>price_6</label><input class="text-input small-input" type="text"  name="price_6" value="'.(($form!=false)?$form->price_6:'').'" /></p>';
+    $str_from.='<p hidden><label>price_2</label><input class="text-input small-input" type="text"  name="price_2" value="'.(($form!=false)?$form->price_2:'').'" /></p>';
+    $str_from.='<p hidden><label>price_3</label><input class="text-input small-input" type="text"  name="price_3" value="'.(($form!=false)?$form->price_3:'').'" /></p>';
+    $str_from.='<p hidden><label>price_4</label><input class="text-input small-input" type="text"  name="price_4" value="'.(($form!=false)?$form->price_4:'').'" /></p>';
+    $str_from.='<p hidden><label>price_5</label><input class="text-input small-input" type="text"  name="price_5" value="'.(($form!=false)?$form->price_5:'').'" /></p>';
+    $str_from.='<p hidden><label>price_6</label><input class="text-input small-input" type="text"  name="price_6" value="'.(($form!=false)?$form->price_6:'').'" /></p>';
     $str_from.='<p><label>durations</label><input class="text-input small-input" type="text"  name="durations" value="'.(($form!=false)?$form->durations:'').'" /></p>';
 //    $str_from.='<p><label>departure</label><input class="text-input small-input" type="text"  name="departure" value="'.(($form!=false)?$form->departure:'').'" /></p>';
     $str_from.='<p><label>departure</label>';
@@ -171,8 +184,8 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>highlights</label><textarea name="highlights">'.(($form!=false)?$form->highlights:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'highlights\'); </script></p>';
     $str_from.='<p><label>schedule</label><textarea name="schedule">'.(($form!=false)?$form->schedule:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'schedule\'); </script></p>';
     $str_from.='<p><label>price_list</label><textarea name="price_list">'.(($form!=false)?$form->price_list:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'price_list\'); </script></p>';
-    $str_from.='<p><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
-    $str_from.='<p><label>list_img</label><textarea name="list_img">'.(($form!=false)?$form->list_img:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'list_img\'); </script></p>';
+    $str_from.='<p hidden><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
+    $str_from.='<p hidden><label>list_img</label><textarea name="list_img">'.(($form!=false)?$form->list_img:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'list_img\'); </script></p>';
     $str_from.='<p><label>title</label><input class="text-input small-input" type="text"  name="title" value="'.(($form!=false)?$form->title:'').'" /></p>';
     $str_from.='<p><label>keyword</label><input class="text-input small-input" type="text"  name="keyword" value="'.(($form!=false)?$form->keyword:'').'" /></p>';
     $str_from.='<p><label>description</label><input class="text-input small-input" type="text"  name="description" value="'.(($form!=false)?$form->description:'').'" /></p>';
