@@ -1470,7 +1470,8 @@ span.dropcap {
     color: #0091ea;
     border-bottom-color: #0091ea;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
+    /*font-weight: 400;*/
 }
 
 .tabs .ui-tabs-panel {
@@ -7174,7 +7175,7 @@ body.single-post .blog-page__content > .post .post-content {
 .product-tabs__content .ui-tabs-panel {
     overflow: hidden;
     overflow-x: auto;
-    min-height: 500px
+    /*min-height: 500px*/
 }
 
 .product-tabs__content .ui-tabs-panel .check-availability {
@@ -11242,4 +11243,39 @@ padding: 10px 0px;
 .item-price-more a:hover{
     border: 1px solid #ff0909 !important;
     background-color: #ff0909 !important;
+}
+.package-details-choose {
+    margin-top: 40px;
+}
+.package-details-content .title {
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+    color: #32aad6;
+}
+.package-details-content .title {
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+    color: #32aad6;
+}
+.package-details-content .title {
+    margin: 10px 0 10px;
+}
+.package-details-choose ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 -15px;
+}
+.package-details-choose ul li {
+    width: 24.333333%;
+    float: left;
+    padding: 0 15px;
+}
+.package-details-choose ul li span {
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+    display: block;
+}
+.package-details-choose ul i {
+    color: #8dc63f;
+    margin-right: 20px;
 }
