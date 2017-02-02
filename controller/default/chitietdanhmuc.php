@@ -76,7 +76,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
                 'banner_img'=>$danhmuc2[0]->img,
                 'content_short'=>$danhmuc2[0]->content_short,
                 'name'=>$name,
-                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/tour/">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.'/tour/'.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$name.'</span></li>'
+                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.$link.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$name.'</span></li>'
             );
             $data['link_anh']=$danhmuc2[0]->img;
             $title=$danhmuc2[0]->title;
@@ -155,7 +155,7 @@ else{
             $data['banner']=array(
                 'banner_img'=>$danhmuc[0]->img,
                 'name'=>$name,
-                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.'/tour/">'.$data['menu'][1]->name.'</a></li><li><span>'.$name.'</span></li>'
+                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$data['menu'][1]->name.'</a></li><li><span>'.$name.'</span></li>'
             );
             $data['link_anh']=$danhmuc[0]->img;
             $title=$danhmuc[0]->title;
