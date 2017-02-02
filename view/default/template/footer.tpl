@@ -24,7 +24,7 @@
                             <div class="bg"></div>
                         </div>
                     </div>
-                    <div class="logo" style="padding-top: 10px"><img src="{Logo}" alt="{Name}"></div>
+                    <div class="logo" style="padding-top: 10px"><img src="{SITE-NAME}/view/admin/Themes/kcfinder/upload/images/cauhinh/logomix.png" alt="{Name}"></div>
                     <div class="widget_content hotline_left" style="text-align: center">
                         <p><a href="tel:{Hotline}"> <span class="phone">{Hotline}</span></a></p>
                         <p><a href="tel:{Hotline_hcm}"> <span class="phone">{Hotline_hcm}</span></a></p>

@@ -19,7 +19,7 @@ function show_timkiem_tour($data = array())
         $asign['danhsach'] ='<div class="item_tour col-xs-12 col-sm-6 col-md-4">Không có kết quả tìm kiếm</div>';
     }
     $asign['PAGING']='';
-    print_template($asign, 'danhmuc_tour');
+    print_template($asign, 'timkiem_tour');
 }
 
 

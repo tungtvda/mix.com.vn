@@ -101,7 +101,8 @@ mark, .mark,
 .tagcloud a:hover,
 .awe-btn.awe-btn-style3,
 .awe-color {
-  background-color: #0091EA;
+  /*background-color: #0091EA;*/
+  background-color:  #ff0909;
 }
 
 
@@ -303,8 +304,10 @@ mark, .mark,
 .accordion .ui-widget-content .ui-state-active,
 .owl-carousel .owl-controls .owl-buttons > div:hover .fa,
 a {
-  color: #0091EA;
+  /*color: #0091EA;*/
+  color: #ff0909;
 }
+
 
 
 .flight-popup-tabs .flight-popup__map-content .flight-popup__map-content-list .map-item:hover,
@@ -332,19 +335,19 @@ a {
 
 #footer-page .widget_contact_info:before, #footer-page .widget_contact_info:after,
 .tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
-  border-bottom-color: #0091EA;
+  border-bottom-color:  #ff0909;;
 }
 .woocommerce-error,
 .woocommerce-info,
 .woocommerce-message,
 #footer-page .widget_contact_info:before, #footer-page .widget_contact_info:after {
-  border-left-color: #0091EA;
+  border-left-color:  #ff0909;;
 }
 
 #page-wrap.dark .accordion .ui-state-active .ui-icon,
 #page-wrap.dark .accordion .ui-widget-content .ui-state-active .ui-icon,
 .page-sidebar .sidebar-title {
-  border-top-color: #0091EA;
+  border-top-color:  #ff0909;;
 }
 
 #page-wrap.dark .sale-flights-tabs__table tr:hover,
