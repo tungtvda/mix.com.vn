@@ -20,10 +20,7 @@
                         </li>
                         <li class="menu-item-has-children {tour_nuoc_ngoai_mn}"><a
                                     href="{SITE-NAME}/tour-du-lich-quoc-te/">Tour nước ngoài</a>
-
                                 {danhmuc_menu_quocte}
-
-
                         </li>
                         <li class=" {dichvu_mn}"><a href="{SITE-NAME}/dich-vu/">{lienhe}</a>
                             <ul class="sub-menu">
