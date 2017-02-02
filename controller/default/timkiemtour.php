@@ -26,10 +26,10 @@ if(isset($_GET['thoigian_timkiem'])&&$_GET['thoigian_timkiem']!=""){
     $thoigian_timkiem=mb_strtolower(addslashes(strip_tags($_GET['thoigian_timkiem'])));
     if($demkt==1)
     {
-        $dk .='  durations LIKE "%'.$thoigian_timkiem.'%"';
+        $dk .='  durations = "'.$thoigian_timkiem.'"';
     }
     else{
-        $dk .=' or durations LIKE "%'.$thoigian_timkiem.'%"';
+        $dk .=' or durations = "'.$thoigian_timkiem.'"';
     }
     $demkt++;
 }

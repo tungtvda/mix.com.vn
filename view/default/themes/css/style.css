@@ -1529,7 +1529,8 @@ span.dropcap {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #0091ea;
+    /*background-color: #0091ea;*/
+    background-color: #ff0909;
     opacity: .9;
     z-index: -1
 }
