@@ -8,9 +8,7 @@
         <div class="item-list">
             <ul>
                 <li {show_code}> Mã tour: {code}</li>
-                <li> Hành trình:
-                    <span class="from">{departure} <i class="awe-icon fa fa-long-arrow-right"></i></span>
-                    <span class="to"> {destination}</span></li>
+                <li> Hành trình: {tring_des}
                 <li>Thời gian: {durations}</li>
             </ul>
         </div>

@@ -60,8 +60,8 @@ function show_chitiet_tour($data = array())
     $asign['price_4_format']= number_format($data['detail'][0]->price_4,0,",",".");
     $asign['price_5_format']= number_format($data['detail'][0]->price_5,0,",",".");
     $asign['price_6_format']= number_format($data['detail'][0]->price_6,0,",",".");
+    $asign['date_now_vn'] = date('d-m-Y', strtotime(DATETIME_FORMAT));
     $asign['date_now'] = date('Y-m-d', strtotime(date(DATETIME_FORMAT)));
-    $asign['date_now_vn'] = date('d-m-Y', strtotime(date(DATETIME_FORMAT)));
 
     $asign['schedule']=$data['detail'][0]->schedule;
 
@@ -91,7 +91,7 @@ function show_chitiet_tour($data = array())
     $asign['hidden_date']='';
     $asign['hidden_date_select']='hidden';
     $asign['date_select']='';
-    if($data['detail'][0]->departure_time!=''){
+    if($data['detail'][0]->departure_time!=''&&$data['detail'][0]->departure_time!='Theo yêu cầu'&&$data['detail'][0]->departure_time!='theo yêu cầu'){
         $asign['hidden_date']='hidden';
         $arr_explode=explode(',',$data['detail'][0]->departure_time);
         if(count($arr_explode)>0){
