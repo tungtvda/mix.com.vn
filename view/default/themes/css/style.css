@@ -11109,7 +11109,7 @@ caption, th, td {
 
 }
 .package-location{
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 .mda-item-title-icon .lb {
     float: left;

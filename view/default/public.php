@@ -108,7 +108,21 @@ function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberfor
                 else{
                     $ft->assign('price_format_sales',number_format((int)$item->price_sales,0,",",".").' vnđ');
                 }
-
+                $arr_destination=explode(',',$item->destination);
+                $tring_des='';
+                if(count($arr_destination)>0)
+                {
+                    $count_check=1;
+                    foreach($arr_destination as $row_des){
+                        $tring_des.=' <span class="from">'.$row_des;
+                        if($count_check<count($arr_destination))
+                        {
+                            $tring_des.=' <i class="awe-icon fa fa-long-arrow-right"></i></span> ';
+                        }
+                        $count_check++;
+                    }
+                }
+                $ft->assign('tring_des',$tring_des);
                 $content=$item->summary;
                 if (strlen($content) > 200) {
                     $ten1=strip_tags($content);

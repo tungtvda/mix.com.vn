@@ -29,23 +29,56 @@ if(isset($_GET['thoigian_timkiem'])&&$_GET['thoigian_timkiem']!=""){
         $dk .='  durations = "'.$thoigian_timkiem.'"';
     }
     else{
-        $dk .=' or durations = "'.$thoigian_timkiem.'"';
+        $dk .=' and durations = "'.$thoigian_timkiem.'"';
     }
     $demkt++;
 }
-if(isset($_GET['danhmuc_tour_1'])&&$_GET['danhmuc_tour_1']!=""){
-    $danhmuc_tour_1=mb_strtolower(addslashes(strip_tags($_GET['danhmuc_tour_1'])));
-    $timkiem_check=1;
+if(isset($_GET['departure'])&&$_GET['departure']!=""){
+    $departure=mb_strtolower(addslashes(strip_tags($_GET['departure'])));
     if($demkt==1)
     {
-        $dk .='  DanhMuc1Id ='.$danhmuc_tour_1;
+        $dk .='  departure = "'.$departure.'"';
     }
     else{
-        $dk .=' or DanhMuc1Id ='.$danhmuc_tour_1;
+        $dk .=' and departure = "'.$departure.'"';
     }
     $demkt++;
 }
-if(isset($_GET['danhmuc_tour_2'])&&$_GET['danhmuc_tour_2']!=""){
+
+if(isset($_GET['danhmuc_tour_1'])&&$_GET['danhmuc_tour_1']!=""){
+    $danhmuc_tour_1=mb_strtolower(addslashes(strip_tags($_GET['danhmuc_tour_1'])));
+    if($danhmuc_tour_1=="tour_trong_nuoc"||$danhmuc_tour_1=="tour_quoc_te")
+    {
+        if($danhmuc_tour_1=="tour_trong_nuoc")
+        {
+            $diemden='  tour_quoc_te = 0';
+        }
+        else{
+            $diemden='  tour_quoc_te = 1';
+        }
+
+        if($demkt==1)
+        {
+            $dk .=$diemden;
+        }
+        else{
+            $dk .=' and '.$diemden;
+        }
+    }
+    else{
+        $timkiem_check=1;
+        if($demkt==1)
+        {
+            $dk .='  DanhMuc1Id ='.$danhmuc_tour_1;
+        }
+        else{
+            $dk .=' and DanhMuc1Id ='.$danhmuc_tour_1;
+        }
+    }
+
+    $demkt++;
+}
+if(isset($_GET['danhmuc_tour_2'])&&$_GET['danhmuc_tour_2']!=""&&$_GET['danhmuc_tour_2']!=1){
     $danhmuc_tour_2=mb_strtolower(addslashes(strip_tags($_GET['danhmuc_tour_2'])));
     $timkiem_check=1;
     if($demkt==1)
@@ -53,10 +86,11 @@ if(isset($_GET['danhmuc_tour_2'])&&$_GET['danhmuc_tour_2']!=""){
         $dk .='  DanhMuc2Id ='.$danhmuc_tour_2;
     }
     else{
-        $dk .=' or DanhMuc2Id ='.$danhmuc_tour_2;
+        $dk .=' and DanhMuc2Id ='.$danhmuc_tour_2;
     }
     $demkt++;
 }
+
 if(isset($_GET['gia_timkiem'])&&$_GET['gia_timkiem']!=""){
     $gia_timkiem=mb_strtolower(addslashes(strip_tags($_GET['gia_timkiem'])));
     $ar_exlode=explode('-',$gia_timkiem);

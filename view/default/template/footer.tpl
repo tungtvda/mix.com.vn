@@ -264,92 +264,20 @@
             var total = 0;
             var rest_room_type = '';
 
-            var from_date_old=$('#from_date').val();
-            var to_date_old=$('#to_date').val();
+            var date_input=$('#date_input').val();
             var date_now = jQuery('#date_get_now').val();
-            if(from_date==''||to_date==""||date_now==""){
-                alert('Bạn vui lòng check ngày đến và ngày đi');
+            if(date_input==''||date_now==""){
+                alert('Bạn vui lòng check ngày đặt tour');
             }
             else{
-                var from_date = from_date_old.split("/");
-                var from_date = new Date(from_date[2], from_date[1] - 1, from_date[0]);
 
-                var to_date = to_date_old.split("/");
-                var to_date = new Date(to_date[2], to_date[1] - 1, to_date[0]);
-
-                var date_now = date_now.split("/");
-                var date_now = new Date(date_now[2], date_now[1] - 1, date_now[0]);
-                if(from_date<date_now||to_date<from_date){
-                    if(from_date<date_now){
-                        alert('Bạn không thể chọn ngày trong quá khứ');
-                    }
-                    else{
-                        if(to_date<from_date){
-                            alert('Ngày đến không được nhỏ hơn ngày đi');
-                        }
-                    }
-
+                if(date_input<date_now){
+                    alert('Bạn không thể chọn ngày trong quá khứ');
                 }
                 else{
-                    var tongngay = daydiff(parseDate(from_date_old), parseDate(to_date_old));
-                    if(tongngay==0){
-                        tongngay=1;
-                    }
-                    $(".price_room").each(function () {
-                        if ($(this).is(':checked')) {
-                            var Id = $(this).attr("value");
-                            var id_link = '#number_' + Id;
-                            var name = $(this).attr("valueName");
-                            rest_room_type = rest_room_type + ' - ' + name + ' <br>'
-
-                            var price = $(this).attr("valuePrice");
-                            var amount_people = $(id_link).val();
-                            if (price == '') {
-                                price = 0;
-                            }
-                            if (amount_people == '') {
-                                amount_people = 1;
-                                $(id_link).val(1);
-                            }
-                            price = parseInt(price);
-                            amount_people = parseInt(amount_people);
-                            checkbox = checkbox + 1;
-                            var sub_total = (price * amount_people)*tongngay;
-                            total += sub_total;
-                        }
-                    });
-                    if (checkbox == 0) {
-                        alert('Bạn vui lòng chọn loại phòng và số lượng phòng')
-                    }
-                    else {
-
-                        var num_member = $('#num_member').val();
-                        if (num_member != '' && parseInt(num_member) > 0) {
-                            var total_format = 'Liên hệ'
-                            if (total > 0) {
-                                var n = parseFloat(total);
-                                total_format = n.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.") + " vnđ";
-                                jQuery("#amount_total").text(total_format);
-                                jQuery("#amount_total").show();
-                                jQuery("#total_fee").text(total_format);
-                                jQuery("#hidden_total").show();
-                                jQuery("#next_booking").show();
-                                jQuery("#rest_room_type").html(rest_room_type);
-                                jQuery("#num_member_table").html(num_member);
-                                jQuery("#from_date_table").html(from_date_old);
-                                jQuery("#to_date_table").html(to_date_old);
-                                jQuery('.back_detail').hide();
-                                jQuery('#form_to_date').hide();
-                                jQuery('.back_detail_cal').hide();
-                                jQuery('.next_detail').slideDown();
-                            }
-                        }
-                        else {
-                            document.getElementById('num_member').focus();
-                            alert('Bạn vui lòng nhập số người');
-
-                        }
-                    }
+                    jQuery('.back_detail').hide();
+                    jQuery('.back_detail_cal').hide();
+                    jQuery('.next_detail').slideDown();
                 }
             }
 

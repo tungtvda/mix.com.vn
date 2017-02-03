@@ -8,6 +8,16 @@ function view_left_danhmuc($data = array())
     {
         $asign['tintuc_left'] = print_item('tintuc_left', $data['tintuc_left']);
     }
+    $asign['danhmuc_1_timkiem_trongnuoc'] ='';
+    if(count($data['danhmuc_1_timkiem_trongnuoc'])>0)
+    {
+        $asign['danhmuc_1_timkiem_trongnuoc'] = print_item('danhmuc_cbox_timkiem', $data['danhmuc_1_timkiem_trongnuoc']);
+    }
+    $asign['danhmuc_1_timkiem_quocte'] ='';
+    if(count($data['danhmuc_1_timkiem_quocte'])>0)
+    {
+        $asign['danhmuc_1_timkiem_quocte'] = print_item('danhmuc_cbox_timkiem', $data['danhmuc_1_timkiem_quocte']);
+    }
     $asign['danhmuc_1_timkiem'] ='';
     if(count($data['danhmuc_1_timkiem'])>0)
     {
