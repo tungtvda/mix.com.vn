@@ -82,7 +82,7 @@ if(isset($_SESSION["Admin"]))
 
         if($insert)
         {
-
+            $new_obj->MatKhau=hash_pass($_POST["Pass"]);
             $new_obj->MatKhau=$Pass;
             admin_insert($new_obj);
             header('Location: '.SITE_NAME.'/controller/admin/admin.php');
@@ -94,7 +94,7 @@ if(isset($_SESSION["Admin"]))
                 $new_obj->MatKhau=$pass_old;
             }
             else{
-                $new_obj->MatKhau=$Pass;
+                $new_obj->MatKhau=hash_pass($_POST["MatKhau"]);
             }
 
             $new_obj->Id=$_GET["Id"];
