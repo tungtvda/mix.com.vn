@@ -84,6 +84,7 @@ if(isset($_SESSION["Admin"]))
        $array['description']='0';
        if(!isset($array['created']))
        $array['created']='0';
+        $array['created']=date(DATETIME_FORMAT);
       $new_obj=new news($array);
         if($insert)
         {
