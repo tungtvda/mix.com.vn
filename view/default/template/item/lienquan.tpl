@@ -14,7 +14,9 @@
         <div class="post-content">
             <p class="price_list">Giá: {price_format}</p>
         </div>
-        <div class="post-link"><a href="{link}"
-                                  class="awe-btn awe-btn-style2">Chi tiết</a></div>
+        <div class="post-link">
+            <a href="{link}"  class="awe-btn awe-btn-style2">Chi tiết</a>
+            <a style="margin-left: 10px; border: none; color: #ffffff" href="{link}#booking" class="awe-btn btn_dattour">Đặt tour</a>
+        </div>
     </div>
 </div>

@@ -153,7 +153,10 @@
 
                     </div>
                 </div>
-                <div  class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
+                <div  class="related-post col-md-12  product-tabs tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Có thể bạn quan tâm</a></li>
+                    </ul>
                     <div class="related-slider">
                         {tour_lienquan}
                     </div>

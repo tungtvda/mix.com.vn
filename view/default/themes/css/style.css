@@ -1836,7 +1836,7 @@ span.dropcap {
 .awe-services h2 {
     font-weight: 600;
     font-size: 18px;
-    border-bottom: 3px solid #0091EA;
+    border-bottom:3px solid #ff0909;
     color: #0091ea;
     line-height: 1.3em;
     margin-top: 0;
@@ -3534,7 +3534,7 @@ body.single-post .blog-page__content > .post .post-content {
 
 .related-post .owl-carousel .owl-controls .owl-buttons {
     bottom: auto;
-    top: -12px;
+    top: -36px;
     right: 0;
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -11103,7 +11103,7 @@ caption, th, td {
     margin-top: 10px;
     /* text-shadow: 0.1em 0.1em #fff; */
     font-size: 16px;
-    color: #8c0404;
+    color: #FFFFFF;
     /*text-shadow: white 0.1em 0.1em 0.2em;*/
     font-weight: bold;
 
@@ -11119,7 +11119,8 @@ caption, th, td {
     margin-bottom: 30px;
 }
 .backgroup_tieuchi{
-    background-image: url(../images/vi-sao-chon-mixtourist.png) !important;
+    /*background-image: url(../images/vi-sao-chon-mixtourist.png) !important;*/
+    background-color: #e20505;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -11279,4 +11280,8 @@ padding: 10px 0px;
 .package-details-choose ul i {
     color: #8dc63f;
     margin-right: 20px;
+}
+.btn_dattour{
+    background-color: #32aad6;
+    color: #fffff;
 }
