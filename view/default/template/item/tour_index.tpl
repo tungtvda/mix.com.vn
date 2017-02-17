@@ -10,6 +10,7 @@
                 <li {show_code}> Mã tour: {code}</li>
                 <li> Hành trình: {tring_des}
                 <li>Thời gian: {durations}</li>
+                <li>Khởi hành: {departure_time}</li>
             </ul>
         </div>
         <div class="item-footer">
