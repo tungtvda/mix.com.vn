@@ -22,7 +22,7 @@ $data['tour_count_down']=tour_getByTop(3,'count_down!="" and count_down>"'.$date
 
 
 $data['khachsan_index']=khachsan_getByTop(9,'highlights=1 ','id desc');
-$data['video_index']=video_getByTop(1,'','id desc');
+$data['video_index']=video_getByTop(1,'highlights=1','id desc');
 
 $data['tieuchi']=tieuchi_getByTop('','','position asc');
 
