@@ -91,17 +91,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden_xs">
                 <div class="awe-services"><h2>Tin tức</h2>
                     <ul class="awe-services__list">
                         {tintuc_index}
                     </ul>
+                </div>
+                <div class="awe-services"><h2>
+                        Video
+                        <a style="float: right; margin-top: 4px; color: red; font-size: 14px" href="{SITE-NAME}/video/">Xem thêm...</a>
+                    </h2>
                     <div class="video-wrapper embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item"
                                 src="{link_video}" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="awe-services"><h2>Fanpage</h2>
+                <div class="awe-services"><h2>
+                        Fanpage
+                    </h2>
                     <div class="fb-page" data-href="https://www.facebook.com/mixtourist/" style="width: 100% !important;"
                          data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
                          data-show-facepile="true">
