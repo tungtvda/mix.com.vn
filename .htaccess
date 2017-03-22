@@ -79,3 +79,6 @@ RewriteRule ^([a-zA-Z0-9_-]+).html$ controller/default/info.php?Id=$1
 RewriteRule ^check-map/$ controller/default/checkmap.php
 RewriteRule ^get-info-booking/$ controller/default/getinfobooking.php
 RewriteRule ^update-status-booking-hotel/$ controller/default/updatestatushotel.php
+
+RewriteRule ^video/$ controller/default/video.php
+RewriteRule ^video/page-([0-9]+)$ controller/default/video.php?page=$1
