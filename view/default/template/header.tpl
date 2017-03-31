@@ -15,6 +15,11 @@
               href="{icon}">
         <meta property='og:image' content='{link_anh}'>
         <meta itemprop='image' content='{link_anh}'>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{Title}" />
+        <meta property="og:description" content="{description}" />
+        <meta property="og:url" content="{link_url}" />
+        <meta property="og:site_name" content="mixtourist.com.vn" />
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
