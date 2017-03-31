@@ -56,6 +56,16 @@
         <noscript><img height="1" width="1" style="display:none"
                        src="https://www.facebook.com/tr?id=1031554816897182&amp;ev=PageView&amp;noscript=1"
             /></noscript>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-43672538-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
         <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>
         <script src="//load.sumome.com/" data-sumo-site-id="f48f6036731adfce249969f8f02a50ddf64cbea037516572ed140330213e47ea" async="async"></script>
     </head>
