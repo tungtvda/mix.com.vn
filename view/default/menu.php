@@ -57,7 +57,7 @@ function view_menu($data = array())
             if(count($data_danhmuc2)>0){
                 $asign['danhmuc_menu_quocte'] .='<ul class="sub-menu">';
                 foreach($data_danhmuc2 as $row2){
-                    $link_dm2=link_dm_tour2($row2,$row->name_url);
+                    $link_dm2=link_dm_tour2($row2,$row->name_url,1);
                     $asign['danhmuc_menu_quocte'] .='<li><a href="'.$link_dm2.'">'.$row2->name.'</a></li>';
                 }
                 $asign['danhmuc_menu_quocte'] .='</ul>';

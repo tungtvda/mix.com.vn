@@ -28,6 +28,11 @@
                         </div>
 
                     </div>
+                    <style>
+                        .package-details-content img{
+                            display: block; margin-left: auto; margin-right: auto;
+                        }
+                    </style>
                     <div class="package-details-content" style="float: left; width: 100%">
                         <h3 class="title">&nbsp;</h3>
                         <p>{content}
