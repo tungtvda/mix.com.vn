@@ -41,7 +41,7 @@ function view_footer($data = array())
                 $asign['danhmuc_menu_footer'] .=' <div class="Domestic"> <ul>';
                 $asign['danhmuc_menu_footer'] .=' <li><a style="font-weight: bold" href="'.$link_dm1.'">'.$row->name.'</a></li>';
                 foreach($data_danhmuc2 as $row2){
-                    $link_dm2=link_dm_tour2($row2,$row->name_url);
+                    $link_dm2=link_dm_tour2($row2,$row->name_url,$row->tour_quoc_te);
                     $asign['danhmuc_menu_footer'] .=' <li><a href="'.$link_dm2.'">'.$row2->name.'</a></li>';
                 }
                 $asign['danhmuc_menu_footer'] .='</ul></div>';
