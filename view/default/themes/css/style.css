@@ -1044,7 +1044,9 @@ span.dropcap {
 }
 
 .awe-navigation .menu-list li:hover > .sub-menu .sub-menu {
-    top: 0
+    top: 0;
+    height: 500px;
+    overflow: scroll;
 }
 
 .awe-navigation-responsive {
