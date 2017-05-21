@@ -10985,7 +10985,7 @@ caption, th, td {
 .tourGioChot .item img {
     width: 100%;
     border: 1px solid #fff;
-    height: 250px;
+    /*height: 250px;*/
 }
 .tourGioChot .item .Img .Name {
     position: absolute;
