@@ -34,9 +34,11 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
             if($danhmuc_1[0]->tour_quoc_te==0){
                 $active='tour_trong_nuoc';
                 $link='/tour-du-lich-trong-nuoc/';
+                $name_dm=$data['menu'][1]->name;
             }else{
                 $active='tour_nuoc_ngoai';
                 $link='/tour-du-lich-quoc-te/';
+                $name_dm=$data['menu'][9]->name;
             }
 //            $dk="DanhMuc2Id=".$danhmuc2[0]->id;
 //            $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
@@ -76,7 +78,7 @@ if(isset($_GET['Id_sub'])&&$_GET['Id_sub']!=''){
                 'banner_img'=>$danhmuc2[0]->img,
                 'content_short'=>$danhmuc2[0]->content_short,
                 'name'=>$name,
-                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$data['menu'][1]->name.'</a></li><li><a href="'.SITE_NAME.$link.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$name.'</span></li>'
+                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$name_dm.'</a></li><li><a href="'.SITE_NAME.$link.$danhmuc_1[0]->name_url.'/">'.$danhmuc_1[0]->name.'</a></li><li><span>'.$name.'</span></li>'
             );
             $data['link_anh']=$danhmuc2[0]->img;
             $title=$danhmuc2[0]->title;
@@ -105,10 +107,12 @@ else{
             {
                 $dk='tour_quoc_te=1';
                 $link='/tour-du-lich-quoc-te/';
+                $name_dm=$data['menu'][9]->name;
             }
             else{
                 $dk='tour_quoc_te=0';
                 $link='/tour-du-lich-trong-nuoc/';
+                $name_dm=$data['menu'][1]->name;
             }
 
             $data['current']=isset($_GET['page'])?$_GET['page']:'1';;
@@ -120,7 +124,7 @@ else{
             $data['banner']=array(
                 'banner_img'=>$data['menu'][1]->img,
                 'name'=>$name,
-                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><span>'.$name.'</span></li>'
+                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><span>'.$name_dm.'</span></li>'
             );
             $data['link_anh']=$data['menu'][1]->img;
             $title=$data['menu'][1]->title;
@@ -140,9 +144,11 @@ else{
             if($danhmuc[0]->tour_quoc_te==0){
                 $active='tour_trong_nuoc';
                 $link='/tour-du-lich-trong-nuoc/';
+                $name_dm=$data['menu'][1]->name;
             }else{
                 $active='tour_nuoc_ngoai';
                 $link='/tour-du-lich-quoc-te/';
+                $name_dm=$data['menu'][9]->name;
             }
             $dk='DanhMuc1Id='.$danhmuc[0]->id;
 
@@ -155,7 +161,7 @@ else{
             $data['banner']=array(
                 'banner_img'=>$danhmuc[0]->img,
                 'name'=>$name,
-                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$data['menu'][1]->name.'</a></li><li><span>'.$name.'</span></li>'
+                'url'=>'<li><a href="'.SITE_NAME.'">Trang chủ</a></li><li><a href="'.SITE_NAME.$link.'">'.$name_dm.'</a></li><li><span>'.$name.'</span></li>'
             );
             $data['link_anh']=$danhmuc[0]->img;
             $title=$danhmuc[0]->title;
