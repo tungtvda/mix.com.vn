@@ -11285,5 +11285,11 @@ padding: 10px 0px;
 }
 .btn_dattour{
     background-color: #32aad6;
-    color: #fffff;
+    color: #ffffff;
+}
+.div-share{
+    position: absolute; top: -32px; right: -41%;
+}
+.div-div-share{
+    float: left;margin-top: 10px;margin-left: 10px; position: relative
 }

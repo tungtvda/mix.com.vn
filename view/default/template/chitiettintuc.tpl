@@ -11,8 +11,21 @@
                                   alt="{name}"
                                   title="{name}">
                         </div>
-                        <div style="float: left;margin-top: 10px;margin-left: 10px;" class="social-share">
-                            <ul>
+                        <div style="float: left;margin-top: 10px;margin-left: 10px; position: relative" class="social-share">
+                            <div class="div-share">
+                                <img src="{SITE-NAME}/view/default/themes/images/chia-se-azbooking.png">
+                            </div>
+
+                            <div class="entry-header" style="margin-top: 20px">
+                                <div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like"
+                                                                                       fb:like:layout="button_count"></a> <a
+                                            class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"
+                                                                                 pi:pinit:layout="horizontal"></a> <a
+                                            class="addthis_counter addthis_pill_style"></a></div>
+                                <script type="text/javascript"
+                                        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5254127c1833f872"></script>
+                            </div>
+                           <!-- <ul>
                                 <li><i class="fa fa-calendar"></i> {created} | <i class="fa fa-eye-slash"></i> {view} | </li>
                                 <li><a href="https://www.facebook.com/sharer/sharer.php?u={link}" target="_blank"><i style="background-color: #ffffff"
                                                                                                                      class="fa fa-facebook"></i></a></li>
@@ -24,7 +37,7 @@
                                                                                                                                                                                       class="fa fa-pinterest"></i></a></li>
                                 <li><a  href="mailto:?Subject={name}?&amp;body={name}:{content_short}" target="_blank"><i
                                                 class="fa fa-envelope"></i></a></li>
-                            </ul>
+                            </ul>-->
                         </div>
 
                     </div>
@@ -38,6 +51,21 @@
                         <p>{content}
                         </p>
                         <h3 class="title">&nbsp;</h3>
+                    </div>
+                </div>
+                <div class="div-div-share" style="position: relative">
+                    <div class="div-share">
+                        <img src="{SITE-NAME}/view/default/themes/images/chia-se-azbooking.png">
+                    </div>
+
+                    <div class="entry-header" style="margin-top: 20px">
+                        <div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like"
+                                                                               fb:like:layout="button_count"></a> <a
+                                    class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"
+                                                                         pi:pinit:layout="horizontal"></a> <a
+                                    class="addthis_counter addthis_pill_style"></a></div>
+                        <script type="text/javascript"
+                                src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5254127c1833f872"></script>
                     </div>
                 </div>
                 <div class="related-post col-md-12 row"><h4>Có thể bạn quan tâm</h4>
