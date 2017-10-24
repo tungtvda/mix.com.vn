@@ -72,7 +72,6 @@
 
         </script>
         <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/lib/jquery-1.11.2.min.js"></script>
-        <script src="//load.sumome.com/" data-sumo-site-id="f48f6036731adfce249969f8f02a50ddf64cbea037516572ed140330213e47ea" async="async"></script>
         <!-- Facebook Pixel Code -->
         <script>
             !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
